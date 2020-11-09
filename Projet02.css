@@ -14,7 +14,7 @@
 .Header
 {
     grid-area: header;
-    margin-left: 65px;
+    margin-left: 70px;
     margin-right: 65px;
     display: flex;
     justify-content: space-between;
@@ -23,8 +23,14 @@
 .Log
 {
     justify-self: stretch;
-    max-width: 50%;
-    border: 3px solid black;
+    max-width: 33%;
+    margin: auto;
+}
+
+.Log2
+{
+    margin-top: 3.6em;
+    margin-bottom: auto;
 }
 
 img
@@ -36,26 +42,38 @@ img
 {
     border: 1px solid black;
     text-align: right;
-    max-width: 29%;
+    width: 32.5%;
     float: right;
     height: 9em; 
-
+    min-width: 250px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Menu1
 {
-    border-top: 3px solid #0065fc;
-    padding-top: 1em;
+    border-top: 2px solid #0065fc;
+    padding-top: 4em;
+    width: 37.2%;
+    display: flex;
+    justify-content: center;
+    font-size: large;
 }
 
 .Menu2
 {
-
+    padding-top: 4em;
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 .Menu3
 {
-
+    padding-top: 4em;
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 .Top
