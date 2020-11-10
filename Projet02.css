@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-VariableFont_wght.ttf') format('truetype'),
+         url('Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .GridConteneur
 {
 	margin:0;
@@ -136,7 +144,7 @@ img
     box-shadow: 60px 60px 100px black inset;
 }
 
-h1
+span, h1, p
 {
-
+    font-family: 'Raleway';
 }
