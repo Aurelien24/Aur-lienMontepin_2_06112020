@@ -48,7 +48,6 @@ img
 
 .Menu
 {
-    border: 1px solid black;
     text-align: right;
     width: 32.5%;
     float: right;
@@ -61,16 +60,15 @@ img
 .Menu1
 {
     border-top: 2px solid #0065fc;
-    padding-top: 4em;
+    padding-top: 3.85em;
     width: 37.2%;
     display: flex;
     justify-content: center;
-    font-size: large;
 }
 
 .Menu2
 {
-    padding-top: 4em;
+    padding-top: 3.85em;
     width: 30%;
     display: flex;
     justify-content: center;
@@ -78,18 +76,23 @@ img
 
 .Menu3
 {
-    padding-top: 4em;
+    padding-top: 3.85em;
     width: 30%;
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
 .Top
 {
     grid-area: top;
-    border: 1px solid black;
     margin-left: 65px;
     margin-right: 65px;
+}
+
+.IconeMap
+{
+    font-size: 25px;
 }
 
 .Hebergement
@@ -147,4 +150,10 @@ img
 span, h1, p
 {
     font-family: 'Raleway';
+}
+
+span
+{
+    font-size: 1.3em;
+    color: #0065FC;
 }
