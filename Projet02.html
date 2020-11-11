@@ -14,26 +14,31 @@
             </div>
             <div class="Menu">
                     <div class="Menu1">
-                        <span>Hébergements</span>
+                        <p>Hébergements</p>
                     </div> 
                     <div class="Menu2">
-                        <span>Activités</span>
+                        <p>Activités</p>
                     </div> 
                     <div class="Menu3">
-                        <span>S'inscrire</span>
+                        <p>S'inscrire</p>
                     </div>
             </div>
-            <script src="https://kit.fontawesome.com/d3cd4e5448.js" crossorigin="anonymous"></script>
         </header>
         <section class="Top">
             <!-- Section supérieur -->
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            <p>
-                En plain centre ville ou en pleine nature
+            <h1 class="h1">Trouver votre hébergement pour des vacances de rêve</h1>
+            <p class="h1Text">
+                En plein centre ville ou en pleine nature
             </p>
-            <p>
-                <i class="fas fa-map-marker-alt"></i>
-            </p>
+            <div>
+                <form method="POST" action="traitement.php" class="Recherche">
+                    <p>
+                        <label for="recherche" class="MapMarquer"><i class="fas fa-map-marker-alt"></i></label>
+                        <input type="text" name="recherche" id="recherche" maxlength="30" value="Marseille, France" />
+                        <input type="submit" value="Rechercher"/>
+                    </p>
+               </form>
+            </div>
             <p>
                 Filtres<i class="fas fa-money-bill-wave"></i>
                 <i class="fas fa-child"></i>
@@ -129,5 +134,6 @@
                 </p>
             </aside>
         </footer>
+        <script src="https://kit.fontawesome.com/d3cd4e5448.js" crossorigin="anonymous"></script>
 	</body>	
 </html>
