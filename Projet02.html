@@ -30,8 +30,8 @@
             <p class="h1Text">
                 En plein centre ville ou en pleine nature
             </p>
-            <div>
-                <form method="POST" action="traitement.php" class="Recherche">
+            <div class="Recherche">
+                <form method="POST" action="traitement.php" >
                     <p>
                         <label for="recherche" class="MapMarquer"><i class="fas fa-map-marker-alt"></i></label>
                         <input type="text" name="recherche" id="recherche" maxlength="30" value="Marseille, France" />
@@ -39,13 +39,32 @@
                     </p>
                </form>
             </div>
-            <p>
-                Filtres<i class="fas fa-money-bill-wave"></i>
-                <i class="fas fa-child"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-dog"></i>
-                
-            </p>
+            <!--<div class="Filtres">
+                <div class="filtreBox">
+                    <p class="FiltreText">Filtres</p>
+                </div>
+                <div class="filtreBox">
+                    <div class="FiltreIcone">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <p>Économique</p>
+                </div>
+                <div class="filtreBox">
+                    <p><i class="fas fa-child"></i> Familial</p>
+                </div>
+                <div class="filtreBox">
+                    <p><i class="fas fa-heart"></i> Romantique</p>
+                </div>
+                <div class="filtreBox">
+                    <p><i class="fas fa-dog"></i> Annimaux autorisés</p>
+                </div>
+            </div>-->
+            <form method="POST" action="traitement.php" >
+                <p>
+                    <label for="recherche" class="MapMarquer">Filtres</label>
+                    <input type="submit" value="Rechercher"/>
+                </p>
+           </form>
             <p>
                 <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
             </p>

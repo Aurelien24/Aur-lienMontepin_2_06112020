@@ -101,10 +101,41 @@ img
 .MapMarquer
 {
     font-size: 1.3em;
-    padding: 1em 1.5em;
+    padding: 0.8em 1em;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 20px 0px 0px 20px;
+}
+
+.Recherche
+{
+    margin-top: 1.5em;
+}
+
+.Filtres
+{
+    display: flex;
+    font-size: 1.3em;
+}
+
+.FiltreText
+{
+    font-weight: bold;
+}
+
+.filtreBox
+{
+    border: 1px solid black;
+    border-radius: 80px 80px 80px 80px;
+    margin: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.FiltreIcone
+{
+    color:  #0065FC;
+    background-color:  #DEEBFF;
 }
 
 .Hebergement
@@ -180,9 +211,8 @@ input[type=text] {
     -moz-appearance: none;
     -webkit-appearance: none;
     border: 1px solid #F2F2F2;
-    border-radius: 0;
     font-size: 1.3em;
-    padding: 1em 2em;
+    padding: 0.8em 1em;
 }
 
 input[type=submit] {
@@ -194,5 +224,6 @@ input[type=submit] {
     font-size: 1.3em;
     color : white;
     border-left: 0px;
-    padding: 1em 2em;
+    padding: 0.8em 1em;
+    border-radius: 0px 20px 20px 0px;
 }
