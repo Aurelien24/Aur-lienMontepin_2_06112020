@@ -6,66 +6,92 @@
 		<link rel="stylesheet" href="Projet02.css" />
         <title>Reservia</title>
     </head>
-
-    <body class="GridConteneur">
-        <header class="Header">
-            <div class=Log2>
-                <a href=""><img src="image/logo/Reservia.PNG" title="logo avec lien vide" class="Log"/></a>
+    <!-- change classe : -> convention minuscule et - entre les mots -->
+    <body class="grid-conteneur">
+        <header class="header">
+            <div class=log2>
+                <a href=""><img src="image/logo/Reservia.PNG" title="logo avec lien vide" class="log"/></a>
             </div>
-            <div class="Menu">
-                    <div class="Menu1">
+            <div class="menu">
+                    <div class="menu1">
                         <p>Hébergements</p>
                     </div> 
-                    <div class="Menu2">
+                    <div class="menu2">
                         <p>Activités</p>
                     </div> 
-                    <div class="Menu3">
+                    <div class="menu3">
                         <p>S'inscrire</p>
                     </div>
             </div>
         </header>
-        <section class="Top">
+        <section class="top">
             <!-- Section supérieur -->
             <h1 class="h1">Trouver votre hébergement pour des vacances de rêve</h1>
             <p class="h1Text">
                 En plein centre ville ou en pleine nature
             </p>
-            <div class="Recherche">
+            <!-- ajouté style pour colé les imptut, c'est part défaut. marge négative 4px part exemple-->
+            <div class="recherche">
                 <form method="POST" action="traitement.php" >
-                    <p>
-                        <label for="recherche" class="MapMarquer"><i class="fas fa-map-marker-alt"></i></label>
+                        <label for="recherche" class="map-marquer"><i class="fas fa-map-marker-alt"></i></label>
                         <input type="text" name="recherche" id="recherche" maxlength="30" value="Marseille, France" />
-                        <input type="submit" value="Rechercher"/>
-                    </p>
+                        <input type="submit" value="Rechercher" class="bouton-recherche"/>
                </form>
             </div>
-            <div class="Filtres">
-                <div class="filtreBox">
-                    <p class="FiltreText">Filtres</p>
-                </div>
-                <div class="filtreBox">
-                    <div class="FiltreIcone">
-                        <i class="fas fa-money-bill-wave"></i>
+            <div class="filtres">
+                <div>
+                    <p class="filtre-text">Filtres (ajuste icone imparfais)</p>
+                </div>    
+                <button class="filtre-box" type="button">
+                    <div class="filtre-text2">
+                        <p class="filtre-text3">Économique</p>
                     </div>
-                    <p>Économique</p>
-                </div>
-                <div class="filtreBox">
-                    <p><i class="fas fa-child"></i> Familial</p>
-                </div>
-                <div class="filtreBox">
-                    <p><i class="fas fa-heart"></i> Romantique</p>
-                </div>
-                <div class="filtreBox">
-                    <p><i class="fas fa-dog"></i> Annimaux autorisés</p>
-                </div>
+                    <div class="filtre-icone">
+                        <div class="centrage-icone">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+                </button>
+                <button class="filtre-box" type="button">
+                    <div class="filtre-text2">
+                        <p class="filtre-text3">Familiale</p>
+                    </div>
+                    <div class="filtre-icone">
+                        <div class="centrage-icone">
+                            <i class="fas fa-child"></i>
+                        </div>
+                    </div>
+                </button>
+                <button class="filtre-box" type="button">
+                    <div class="filtre-text2">
+                        <p class="filtre-text3">Romantique</p>
+                    </div>
+                    <div class="filtre-icone">
+                        <div class="centrage-icone">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </button>
+                <button class="filtre-box" type="button">
+                    <div class="filtre-text2">
+                        <p class="filtre-text3">Annimaux autorisés</p>
+                    </div>
+                    <div class="filtre-icone">
+                        <div class="centrage-icone">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                    </div>
+                </button>
+                
             </div>
-            <p>
-                <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
-            </p>
+            <div class="info">
+                <p><div class="fa-info2"><i class="fas fa-info"></i></div>
+                    <p> Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </section>
-        <section class="Hebergement">
+        <section class="hebergement">
             <h1>Hébergements à Marseille</h1>
-            <div class="Hebergement2">
+            <div class="hebergement2">
                 <article>
                     <a href=""><img src="image/hebergements/h1.jpg" title="logo avec lien vide" class="h"/></a>
                 </article>
@@ -76,7 +102,7 @@
                     <a href=""><img src="image/hebergements/h3.jpg" title="logo avec lien vide" class="h"/></a>
                 </article>
             </div>
-            <div class="Hebergement2">
+            <div class="hebergement2">
                 <article>
                     <a href=""><img src="image/hebergements/h4.jpg" title="logo avec lien vide" class="h"/></a>
                 </article>
@@ -91,7 +117,7 @@
                 Afficher plus
             </p>
         </section>
-        <section class="Popular">
+        <section class="popular">
             <h1>Les plus populaires</h1>
             <article>
                 <a href=""><img src="image/hebergements/p1.jpg" title="logo avec lien vide" class="p"/></a>
@@ -103,25 +129,25 @@
                 <a href=""><img src="image/hebergements/p3.jpg" title="logo avec lien vide" class="p"/></a>
             </article>
         </section>
-        <section class="Activité">
+        <section class="activité">
             <p>Activité a Marseille</p>
-            <div class="Activité2">
-                <article class="Ia1">
+            <div class="activité2">
+                <article class="ia1">
                     <a href=""><img src="image/activites/a1.jpg" title="logo avec lien vide" class="a"/></a>
                 </article>
-                <article class="Ia2">
+                <article class="ia2">
                     <a href=""><img src="image/activites/a2.jpg" title="logo avec lien vide" class="a2"/></a>
                 </article>
-                <article class="Ia3">
+                <article class="ia3">
                     <a href=""><img src="image/activites/a3.jpg" title="logo avec lien vide" class="a3"/></a>
                 </article>
-                <article class="Ia4">
+                <article class="ia4">
                     <a href=""><img src="image/activites/a4.jpg" title="logo avec lien vide" class="a"/></a>
                 </article>
-                <article class="Ia5">
+                <article class="ia5">
                     <a href=""><img src="image/activites/a5.jpg" title="logo avec lien vide" class="a2"/></a>
                 </article>
-                <article class="Ia6">
+                <article class="ia6">
                     <a href=""><img src="image/activites/a6.jpg" title="logo avec lien vide" class="a3"/></a>
                 </article>
             </div>
@@ -129,7 +155,7 @@
         <footer>
             <aside class="footer">
                 <h2>A propos</h2>
-                <p class="FooterP">
+                <p class="footerP">
                     <a href="" class="FooterP">Fonctionnement du site</a>
                     <br />
                     <br />
@@ -141,7 +167,7 @@
             </aside>
             <aside class="footer">
                 <h2>Nos Hébergements</h2>
-                <p class="FooterP">
+                <p class="footerP">
                     <a href="" class="FooterP">Charte qualité</a>
                     <br />
                     <br />
@@ -150,7 +176,7 @@
             </aside>
             <aside class="footer">
                 <h2>Assistance</h2>
-                <p  class="FooterP">
+                <p  class="footerP">
                     <a href="" class="FooterP">Centre d'aide</a>
                     <br />
                     <br />
