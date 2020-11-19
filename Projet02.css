@@ -278,7 +278,7 @@
 {
     margin: 0.5em 1em 0.5em 1em;
     color: black;
-    line-height: 1.8em;    
+    line-height: 1.8em;
 }
 
 .alligne-afficher
@@ -351,9 +351,7 @@
     height: 11.4em; 
     object-fit: cover; 
     border: 3px solid white;
-    box-shadow: 60px 60px 100px black inset;
     border-radius: 1.5em 0em 0em 1.5em;
-    margin-bottom: auto;
 }
 
 .paragaph-p
@@ -403,13 +401,23 @@
 .activité
 {
     grid-area: activité;
+    padding: 4.1em 0em 0em 0em;
+}
+
+.activité-text
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    margin-left: 3.5%; 
 }
 
 .activité2
 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-	grid-template-rows: auto;
+	grid-template-rows: 19.5em 17.1em;
 	grid-template-areas:
         "a1 a2 a4 a5"
         "a1 a3 a4 a6";
@@ -417,63 +425,161 @@
     width: 100%;
 }
 
-.a
+.lien-a
 {
-    width: 25em;
-    height: 35.8em;
-    object-fit: cover; 
-    border: 6px white solid;
-    border-radius: 30px;
-    margin-left: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.9em;
+    
 }
 
-.a2
+span.middle-a
 {
-    width: 25em;
-    height: 20em;
-    object-fit: cover; 
-    border: 6px white solid;
-    border-radius: 30px;
-    margin-left: 60px;
+    position: absolute;
+    top: 50%; /* poussé de la moitié de hauteur du référent */
+    transform: translateY(-50%);
 }
 
-.a3
-{
-    width: 25em;
-    height: 15em;
-    object-fit: cover; 
-    border: 6px white solid;
-    border-radius: 30px;
-    margin-left: 60px;
-}
 .ia1
 {
     grid-area: a1;
+    height: 100%;
+    width: 83.5%;
+    background-image: url(image/activites/a1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1.9em 1.9em 1.9em 1.9em;
+    box-shadow: 0em 0em 2em #f2f2f2 ;
+    margin-left: 14%;
+}
+
+.paragaph-a
+{
+    margin : 0em 0em -1px 0em;
+    padding : 0em 0em 0em 1.5em;
+    color: black;
+    background-color: white;
+    height: 13.3%;
+    width: 93.96%;
+    border-radius: 0em 0em 1.9em 1.9em;
+    position: relative;
+    border: 1px solid white;
 }
 
 .ia2
 {
     grid-area: a2;
+    height: 100%;
+    width: 83.5%;
+    background-image: url(image/activites/a2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1.9em 1.9em 1.9em 1.9em;
+    box-shadow: 0em 0em 2em #f2f2f2;
+    margin-left: 10%;
+}
+
+.paragaph-a2
+{
+    margin : 0em 0em -1px 0em;
+    padding : 0em 0em 0em 1.5em;
+    color: black;
+    background-color: white;
+    height: 23.32%;
+    width: 93.96%;
+    border-radius: 0em 0em 1.9em 1.9em;
+    position: relative;
+}
+
+.position-ia3
+{
+    grid-area: a3;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .ia3
 {
-    grid-area: a3;
+    height: 80%;
+    width: 83.5%;
+    background-image: url(image/activites/a3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1.9em 1.9em 1.9em 1.9em;
+    box-shadow: 0em 0em 2em #f2f2f2;
+    margin-left: 10%;
+}
+
+.paragaph-a3
+{
+    margin : 0em 0em -1px 0em;
+    padding : 0em 0em 0em 1.5em;
+    color: black;
+    background-color: white;
+    height: 36.5%;
+    width: 93.96%;
+    border-radius: 0em 0em 1.9em 1.9em;
+    position: relative;
 }
 
 .ia4
 {
     grid-area: a4;
+    height: 100%;
+    width: 83.5%;
+    background-image: url(image/activites/a4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1.9em 1.9em 1.9em 1.9em;
+    box-shadow: 0em 0em 2em #f2f2f2 ;
+    margin-left: 5.35%;
 }
 
 .ia5
 {
     grid-area: a5;
+    height: 77%;
+    width: 82.8%;
+    background-image: url(image/activites/a5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1.9em 1.9em 1.9em 1.9em;
+    box-shadow: 0em 0em 2em #f2f2f2;
+    margin-left: 2.6%;
 }
 
 .ia6
 {
     grid-area: a6;
+    height: 100%;
+    width: 82.8%;
+    background-image: url(image/activites/a6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1.9em 1.9em 1.9em 1.9em;
+    box-shadow: 0em 0em 2em #f2f2f2;
+    margin-left: 2.6%;
+}
+
+.paragaph-a6
+{
+    margin : 0em 0em -1px 0em;
+    padding : 0em 0em 0em 1.5em;
+    color: black;
+    background-color: white;
+    height: 29.2%;
+    width: 93.96%;
+    border-radius: 0em 0em 1.9em 1.9em;
+    position: relative;
 }
 
 .footer
