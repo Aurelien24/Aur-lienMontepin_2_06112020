@@ -8,29 +8,28 @@
     </head>
     <!-- change classe : -> convention minuscule et - entre les mots -->
     <body class="grid-conteneur">
-        <header class="header">
+        <header>
             <div class=log2>
-                <a href=""><img src="image/logo/Reservia.PNG" title="logo avec lien vide" class="log"/></a>
+                <a href=""><img src="image/logo/Reservia.PNG" title="logo avec lien vide"/></a>
             </div>
             <div class="menu">
-                    <div class="menu1">
+                    <div class="input-menu-large selected">
                         <p>Hébergements</p>
                     </div> 
-                    <div class="menu2">
+                    <div class="input-menu no-selected">
                         <p>Activités</p>
                     </div> 
-                    <div class="menu3">
+                    <div class="input-menu s-inscrire no-selected">
                         <p>S'inscrire</p>
                     </div>
             </div>
         </header>
         <section class="top">
             <!-- Section supérieur -->
-            <h1 class="h1">Trouver votre hébergement pour des vacances de rêve</h1>
-            <p class="h1Text">
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <p>
                 En plein centre ville ou en pleine nature
             </p>
-            <!-- ajouté style pour colé les imptut, c'est part défaut. marge négative 4px part exemple-->
             <div class="recherche">
                 <form method="POST" action="traitement.php" >
                         <label for="recherche" class="map-marquer"><i class="fas fa-map-marker-alt"></i></label>
@@ -39,62 +38,60 @@
                </form>
             </div>
             <div class="filtres">
-                <div>
-                    <p class="filtre-text">Filtres</p>
-                </div>    
-                <button class="filtre-box" type="button">
-                    <div class="filtre-text2">
-                        <p class="filtre-text3">Économique</p>
+                <p>Filtres</p>
+                <button type="button">
+                    <div class="filtre-text">
+                        <p>Économique</p>
                     </div>
                     <div class="filtre-icone">
-                        <div class="centrage-icone">
+                        <div>
                             <i class="fas fa-money-bill-wave"></i>
                         </div>
                     </div>
                 </button>
-                <button class="filtre-box" type="button">
-                    <div class="filtre-text2">
-                        <p class="filtre-text3">Familiale</p>
+                <button type="button">
+                    <div class="filtre-text">
+                        <p>Familiale</p>
                     </div>
                     <div class="filtre-icone">
-                        <div class="centrage-icone">
+                        <div>
                             <i class="fas fa-child"></i>
                         </div>
                     </div>
                 </button>
-                <button class="filtre-box" type="button">
-                    <div class="filtre-text2">
-                        <p class="filtre-text3">Romantique</p>
+                <button type="button">
+                    <div class="filtre-text">
+                        <p>Romantique</p>
                     </div>
                     <div class="filtre-icone">
-                        <div class="centrage-icone">
+                        <div>
                             <i class="fas fa-heart"></i>
                         </div>
                     </div>
                 </button>
-                <button class="filtre-box" type="button">
-                    <div class="filtre-text2">
-                        <p class="filtre-text3">Annimaux autorisés</p>
+                <button type="button">
+                    <div class="filtre-text">
+                        <p>Annimaux autorisés</p>
                     </div>
                     <div class="filtre-icone">
-                        <div class="centrage-icone">
+                        <div>
                             <i class="fas fa-dog"></i>
                         </div>
                     </div>
-                </button>
-                
+                </button> 
             </div>
             <div class="info">
-                <div class="fa-info2"><i class="fas fa-info"></i></div>
-                    <p class="text-info"> Plus de 500 logements sont disponibles dans cette ville</p>
+                <div><i class="fas fa-info"></i></div>
+                <p> Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
+
         <section class="hebergement">
             <div class="titre-hebergement"><h1 class="titre">Hébergements à Marseille</h1></div>
             <div class="hebergement2">
                 <article>
-                    <a href="" class=lien-h>
-                        <img src="image/hebergements/h1.jpg" title="logo avec lien vide" class="h"/>
+                    <a href="">
+                        <img src="image/hebergements/h1.jpg" title="logo avec lien vide"/>
                             <p class="paragaph-h">
                                 <span class="span-title">Auberge la Cannebière</span><br />
                                 Nuit a partir de <span class="span-price">25€</span><br />
@@ -103,9 +100,9 @@
                     </a>
                 </article>
                 <article>
-                    <a href="" class=lien-h>
-                        <img src="image/hebergements/h2.jpg" title="logo avec lien vide" class="h"/>
-                        <p class="paragaph-h">
+                    <a href="">
+                        <img src="image/hebergements/h2.jpg" title="logo avec lien vide"/>
+                        <p>
                             <span class="span-title">Hôtel du port</span><br />
                             Nuit a partir de 52<span class="span-price">€</span><br />
                             <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i>
@@ -113,9 +110,9 @@
                     </a>
                 </article>
                 <article>
-                    <a href="" class=lien-h>
-                        <img src="image/hebergements/h3.jpg" title="logo avec lien vide" class="h"/>
-                        <p class="paragaph-h">
+                    <a href="">
+                        <img src="image/hebergements/h3.jpg" title="logo avec lien vide"/>
+                        <p>
                             <span class="span-title">Hôtel Les mouettes</span><br />
                             Nuit a partir de 76<span class="span-price">€</span><br />
                             <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star grey-star"></i>
@@ -123,12 +120,10 @@
                         
                     </a>
                 </article>
-            </div>
-            <div class="hebergement2">
                 <article>
-                    <a href="" class=lien-h>
-                        <img src="image/hebergements/h4.jpg" title="logo avec lien vide" class="h"/>
-                        <p class="paragaph-h">
+                    <a href="">
+                        <img src="image/hebergements/h4.jpg" title="logo avec lien vide"/>
+                        <p>
                             <span class="span-title">Hôtel de la mer</span><br />
                             Nuit a partir de 46<span class="span-price">€</span><br />
                             <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star grey-star"></i><i class="fas fa-star grey-star"></i>
@@ -136,9 +131,9 @@
                     </a>
                 </article>
                 <article>
-                    <a href="" class=lien-h>
-                        <img src="image/hebergements/h5.jpg" title="logo avec lien vide" class="h"/>
-                        <p class="paragaph-h">
+                    <a href="">
+                        <img src="image/hebergements/h5.jpg" title="logo avec lien vide"/>
+                        <p>
                             <span class="span-title">Auberge Le Panier</span><br />
                             Nuit a partir de <span class="span-price">23€</span><br />
                             <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star grey-star"></i>
@@ -146,9 +141,9 @@
                     </a>
                 </article>
                 <article>
-                    <a href="" class=lien-h>
-                        <img src="image/hebergements/h6.jpg" title="logo avec lien vide" class="h"/>
-                        <p class="paragaph-h">
+                    <a href="">
+                        <img src="image/hebergements/h6.jpg" title="logo avec lien vide"/>
+                        <p>
                             <span class="span-title">Hôtel chez Amina</span><br />
                             Nuit a partir de 96<span class="span-price">€</span><br />
                             <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i>
@@ -166,9 +161,9 @@
             <div class="popular-text"><h1 class="titre">Les plus populaires</h1><i class="fas fa-chart-line"></i></div>
             <div class="popular2">
                 <article>
-                    <a href="" class=lien-p>
-                        <img src="image/hebergements/p1.jpg" title="logo avec lien vide" class="p"/>
-                        <div class="div-text-p">
+                    <a href="">
+                        <img src="image/hebergements/p1.jpg" title="logo avec lien vide"/>
+                        <div>
                             <p class="paragaph-p">
                                 <span class="span-title">Hôtel Le soleil du matin</span><br />
                                 Nuit a partir de 128<span class="span-price">€</span><br />
@@ -176,13 +171,13 @@
                             <p>
                                 <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i>
                             </p>
-                        </div>                       
+                        </div>             
                     </a>
                 </article>
                 <article>
-                    <a href="" class=lien-p>
-                        <img src="image/hebergements/p2.jpg" title="logo avec lien vide" class="p"/>
-                        <div class="div-text-p">
+                    <a href="">
+                        <img src="image/hebergements/p2.jpg" title="logo avec lien vide"/>
+                        <div>
                             <p class="paragaph-p">
                                 <span class="span-title">Au coeur de l'eau Chambres d'hôtes</span><br />
                                 Nuit a partir de 71<span class="span-price">€</span><br />
@@ -190,13 +185,13 @@
                             <p>
                                 <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star grey-star"></i>
                             </p>
-                        </div>                       
+                        </div>        
                     </a>
                 </article>
                 <article>
-                    <a href="" class=lien-p>
-                        <img src="image/hebergements/p3.jpg" title="logo avec lien vide" class="p"/>
-                        <div class="div-text-p">
+                    <a href="">
+                        <img src="image/hebergements/p3.jpg" title="logo avec lien vide"/>
+                        <div>
                             <p class="paragaph-p">
                                 <span class="span-title">Hôtel Tout bleu et Blanc</span><br />
                                 Nuit a partir de 68<span class="span-price">€</span><br />
@@ -209,26 +204,27 @@
                 </article>
             </div>
         </section>
+        <!-- Faire l'image en backgrand dans un div (donc ajouté un div) -->
         <section class="activité">
             <div class="activité-text"><p class="titre">Activité à Marseille</p></div>
-            <div class="activité2">
+            <div class="activité2">  
                 <article class="ia1">
-                    <a href="" class="lien-a">
+                    <a href="" class="lien-activite">
                         <p class="paragaph-a">
                             <span class="span-title middle-a">Vieux Port</span>
                         </p>
                     </a>
                 </article>
                 <article class="ia2">
-                    <a href="" class="lien-a">
+                    <a href="" class="lien-activite">
                         <p class="paragaph-a2">
                             <span class="span-title middle-a">Fort de Pomègues</span>
                         </p>
                     </a>
                 </article>
-                <div class="position-ia3">
+                <div>
                     <article class="ia3">
-                        <a href="" class="lien-a">
+                        <a href="" class="lien-activite">
                             <p class="paragaph-a3">
                                 <span class="span-title middle-a"">Vieux Port</span>
                             </p>
@@ -236,21 +232,21 @@
                     </article>
                 </div>
                 <article class="ia4">                
-                    <a href="" class="lien-a">
+                    <a href="" class="lien-activite">
                         <p class="paragaph-a">
                             <span class="span-title middle-a"">Vieux Port</span>
                         </p>
                     </a>
                 </article>            
                 <article class="ia5">
-                    <a href="" class="lien-a">
+                    <a href="" class="lien-activite">
                         <p class="paragaph-a6">
                             <span class="span-title middle-a"">Vieux Port</span>
                         </p>
                     </a>
                 </article>
                 <article class="ia6">
-                    <a href="" class="lien-a">
+                    <a href="" class="lien-activite">
                         <p class="paragaph-a6">
                             <span class="span-title middle-a"">Vieux Port</span>
                         </p>
@@ -259,34 +255,30 @@
             </div>
         </section>
         <footer>
-            <aside class="footer">
+            <aside>
                 <h2>A propos</h2>
-                <p class="footerP">
-                    <a href="" class="footerP">Fonctionnement du site</a>
+                <p>
+                    <a href="">Fonctionnement du site</a>
                     <br />
+                    <a href="">Condition général de vente</a>
                     <br />
-                    <a href="" class="footerP">Condition général de vente</a>
-                    <br />
-                    <br />
-                    <a href="" class="footerP">Donnée et confidentialité</a>
+                    <a href="">Donnée et confidentialité</a>
                 </p>
             </aside>
-            <aside class="footer">
+            <aside>
                 <h2>Nos Hébergements</h2>
-                <p class="footerP">
-                    <a href="" class="footerP">Charte qualité</a>
+                <p>
+                    <a href="">Charte qualité</a>
                     <br />
-                    <br />
-                    <a href="" class="footerP">Soumettre votre hôtel</a>
+                    <a href="">Soumettre votre hôtel</a>
                 </p>
             </aside>
-            <aside class="footer">
+            <aside>
                 <h2>Assistance</h2>
-                <p  class="footerP">
-                    <a href="" class="footerP">Centre d'aide</a>
+                <p>
+                    <a href="">Centre d'aide</a>
                     <br />
-                    <br />
-                    <a href="" class="footerP">Nous contacter</a>
+                    <a href="">Nous contacter</a>
                 </p>
             </aside>
         </footer>
