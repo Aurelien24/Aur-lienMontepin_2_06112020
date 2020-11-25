@@ -59,26 +59,28 @@
                         </div>
                     </div>
                 </button>
-                <button type="button">
-                    <div class="filtre-text">
-                        <p>Romantique</p>
-                    </div>
-                    <div class="filtre-icone">
-                        <div>
-                            <i class="fas fa-heart"></i>
+                <!-- Romantique ne part pas avec annimaux autorisés. J'ai mis un div sur les deux avant mais, -->
+                <div>
+                    <button type="button">
+                        <div class="filtre-text">
+                            <p>Romantique</p>
                         </div>
-                    </div>
-                </button>
-                <button type="button">
-                    <div class="filtre-text">
-                        <p>Annimaux autorisés</p>
-                    </div>
-                    <div class="filtre-icone">
-                        <div>
-                                <i class="fas fa-dog"></i>                            </div>
-                    </div>
-                </button> 
-
+                        <div class="filtre-icone">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <button type="button">
+                        <div class="filtre-text">
+                            <p>Annimaux autorisés</p>
+                        </div>
+                        <div class="filtre-icone">
+                            <div>
+                                    <i class="fas fa-dog"></i>                            </div>
+                        </div>
+                    </button> 
+                </div>
             </div>
             <div class="info">
                 <div><i class="fas fa-info"></i></div>
@@ -151,6 +153,7 @@
                     </a>
                 </article>
             </div>
+            <!-- Le div qui prend pas toute la place... -->
             <div class="alligne-afficher">
                 <p class="afficher-plus">
                     Afficher plus
@@ -183,6 +186,7 @@
                                 Nuit a partir de 71<span class="span-price">€</span><br />
                             </p>
                             <p>
+                                <!-- Celui ou l'étoile ne bug pas a 1067px-->
                                 <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star grey-star"></i>
                             </p>
                         </div>        
@@ -204,7 +208,7 @@
                 </article>
             </div>
         </section>
-        <!-- Faire l'image en backgrand dans un div (donc ajouté un div) -->
+        <!-- Faire l'image en backgrand dans un div (donc ajouté un div) - Pas réusit a dimantionner la hauteur XD -->
         <section class="activité">
             <div class="activité-text"><p class="titre">Activité à Marseille</p></div>
             <div class="activité2">  

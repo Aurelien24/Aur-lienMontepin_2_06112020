@@ -167,7 +167,13 @@ header > .menu
     font-weight: bold;
 }
 
-.filtres > button
+.filtres > div
+{
+    display: flex;
+    align-items: center;
+}
+
+.filtres > button, .filtres > div > button
 {
     border: 0px;
     border-radius: 80px 80px 80px 80px;
@@ -183,7 +189,7 @@ header > .menu
         "zone-1 zone-2"
 }
 
-.filtres > button > .filtre-icone
+.filtres > button > .filtre-icone, .filtres > div > button > .filtre-icone
 {
     color:  #0065FC;
     background-color:  #DEEBFF;
@@ -196,14 +202,14 @@ header > .menu
     text-align: center;
 }
 
-.filtres > button > .filtre-icone > div
+.filtres > button > .filtre-icone > div, .filtres > div > button > .filtre-icone > div
 {
     font-size: 2em;
     text-align: center;
     padding: 0.4em;
 }
 
-.filtres > button > .filtre-text
+.filtres > button > .filtre-text, .filtres > div > button > .filtre-text
 {
     font-size: 1.3em;
     grid-row-start: 1 ;
