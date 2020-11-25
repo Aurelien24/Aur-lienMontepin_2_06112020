@@ -1,5 +1,5 @@
 
-/* Mise en place police général*/
+/* Mise en place de la police*/
 @font-face {
     font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf') format('truetype'),
@@ -8,116 +8,97 @@
     font-style: normal;
 }
 
-
-/* Mise en page général*/
-.grid-conteneur
+body
 {
-	margin:0;
-	display: grid;
-	grid-template-columns: 66% 34%;
-	grid-template-rows: 9em auto auto auto 18em;
-	grid-template-areas:
-		"header header"
-        "top top"
-        "hebergement popular"
-        "activité activité"
-        "footer footer"
+    margin: 0;
 }
 
-/* Zone Header*/
 header
 {
-    grid-area: header;
-    margin-left: 70px;
-    margin-right: 65px;
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
 }
 
 header > .log2
 {
-    margin-top: 3.6em;
+    margin: 3em 5% 1em 5%;
     margin-bottom: auto;
+    width: 26%;
 }
 
 header > .log2 > a > img
 {
     justify-self: stretch;
-    max-width: 33%;
     margin: auto;
+    width: 100%;
 }
 
 header > .menu
 {
-    text-align: right;
-    width: 32.5%;
-    float: right;
-    height: 9em; 
-    min-width: 400px;
+    text-align: center;
     display: flex;
-    justify-content: space-between;
-}
-
-.menu > .selected
-{
-    border-top: 2px solid #0065fc;
-    color: #0065FC;
-}
-
-.menu > .no-selected
-{
-    border-top: 2px solid white;
-}
-
-
-.menu > .input-menu-large
-{
-    width: 37.2%;
-}
-
-.menu > .input-menu
-{
-    padding-top: 2em;
-    width: 30%;
-}
-
-.menu > .s-inscrire
-{
-    font-weight: bold;
-    color: #0065FC;
+    justify-content: stretch;
+    flex-wrap: wrap-reverse;
+    /width: 100%;
 }
 
 .menu > div
 {
-    display: flex;
-    justify-content: center;
-    font-size: 1.3em;
-    padding-top: 2em;
+   /*width: 50%;*/
 }
 
-/* Zone suppérieur*/
+.h-a
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.h-a > div
+{
+    width: 50%;
+}
+
+.menu > .h-a > .selected
+{
+    color: #0065FC;
+    border-bottom: 6px solid #0065FC;
+    font-size: 2em;
+}
+
+.menu > .h-a > .no-selected
+{
+    border-bottom: 6px solid #f2f2f2;
+    font-size: 2em;
+}
+
+.menu > .s-inscrire
+{
+    font-size: 2em;
+    font-weight: bold;
+    color: #0065FC;
+}
+
 .top
 {
-    grid-area: top;
-    margin-left: 65px;
-    margin-right: 65px;
+    margin: 0em 5% 0em 5%;
 }
 
 .top > h1
 {
-    font-size: 1.8em;
+    font-size: 3em;
     font-weight: bold;
-    margin-bottom: 0.4em;
 }
 
 .top > p
 {
-    margin-top: 0.4em;
+    font-size: 2em
 }
 
 .top > .recherche
 {
     margin-top: 1.5em;
+    width: 100%;
 }
 
 .recherche > form > .map-marquer
@@ -136,9 +117,15 @@ header > .menu
     border: 1px solid #F2F2F2;
     font-size: 1.3em;
     padding: 0.8em 1em;
+    width: 70%;
 }
 
 .recherche > form > .bouton-recherche
+{
+    display:none;
+}
+
+.recherche > form > .bouton-recherche-phone
 {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -148,34 +135,24 @@ header > .menu
     font-size: 1.3em;
     color : white;
     border-left: 0px;
-    padding: 0.8em 1em;
-    border-radius: 0px 20px 20px 0px;
-    margin-left: -4px;
+    padding: 0.9em 1em;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: -24px;
+    font-family: 'FontAwesome';
+    height: 100%
 }
 
-.recherche > form > .bouton-recherche-phone
+.filtres
 {
-    display:none;
-}
-
-.top > .filtres
-{
-    font-size: 1.3em;
-    margin-top: 1.9em;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.top > .filtres > p
+.filtres > p
 {
     font-weight: bold;
-}
-
-.filtres > div
-{
-    display: flex;
-    align-items: center;
+    width: 100%;
 }
 
 .filtres > button, .filtres > div > button
@@ -267,90 +244,14 @@ header > .menu
     font-size: 1.25em;
 }
 
-/* Zone hebergement*/
-.hebergement
-{
-    grid-area: hebergement;
-    background-color: #f2f2f2;
-    border-radius: 1.5em;
-    margin-left: 4em;
-    margin-right: 1.8em;
-    padding: 2.4em 4.7% 0em 4.7%;
-}
-
-.hebergement > .titre-hebergement
-{
-    margin: 1.9em 0em 0em 0.2em;
-}
-
-.hebergement > .hebergement2
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: -0.5em;
-}
-
-.hebergement2 > article
-{
-    width: 31%;
-    min-width: 193px;
-    margin: 0em 0.2em 2.5em 0.2em;
-}
-
-.hebergement2 > article > a
-{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border: 3px solid white;
-    border-radius: 1.5em;
-    text-decoration: none;
-}
-
-.hebergement2 > article > a > img
-{
-    /*min-width: 324px;*/
-    height: 9.2em;
-    object-fit: cover;
-    border: 3px solid white;
-    border-radius: 1.5em 1.5em 0em 0em;
-}
-
-
-
-.hebergement2 > article > a > p
-{
-    margin: 0.5em 1em 0.5em 1em;
-    color: black;
-    line-height: 1.8em;
-}
-
-.alligne-afficher
-{
-    display: flex;
-    align-items: center;
-}
-
-.afficher-plus
-{
-    font-weight: bold;
-    font-size: 1.4em;
-}             
-
-
 /* Zone Populaire*/
 .popular
 {
-    grid-area: popular;
     background-color: #f2f2f2;
-    border-radius: 1.5em;
-    margin-right: 4em;
-    margin-left: 1.8em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2.4em 0em 0em 0em;
+    padding: 2.4em 5% 0em 5%;
 
 }
 
@@ -360,8 +261,6 @@ header > .menu
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.5em;
-    padding-left: 10%;
-    padding-right: 10%;
     width: 80%;
 }
 
@@ -384,7 +283,7 @@ header > .menu
 
 .popular > .popular2 > article
 {
-    width: 81.88%;
+    width: 100%;
     min-height: 25%;
     margin-bottom: 2.5em;
 }
@@ -425,6 +324,72 @@ header > .menu
     line-height: 2em;    
 }
 
+/* Zone hebergement*/
+.hebergement
+{
+    grid-area: hebergement;
+    padding: 2.4em 5% 0em 5%;
+}
+
+.hebergement > .titre-hebergement
+{
+    margin: 1.9em 0em 0em 0.2em;
+    width: 100%;
+}
+
+.hebergement > .hebergement2
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: -0.5em;
+}
+
+.hebergement2 > article
+{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.hebergement2 > article > a
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 1.5em;
+    text-decoration: none;
+}
+
+.hebergement2 > article > a > img
+{
+    /*min-width: 324px;*/
+    height: 9.2em;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 1.5em 1.5em 0em 0em;
+}
+
+.hebergement2 > article > a > p
+{
+    margin: 0.5em 1em 0.5em 1em;
+    color: black;
+    line-height: 1.8em;
+}
+
+.alligne-afficher
+{
+    display: flex;
+    align-items: center;
+}
+
+.afficher-plus
+{
+    font-weight: bold;
+    font-size: 1.4em;
+}  
 
 /* Zonne commune a populaire et hébergement*/
 .titre
@@ -454,32 +419,26 @@ header > .menu
     color: #D9D9D9;
 }
 
+span, h1, p, h2
+{
+    font-family: 'Raleway';
+}
+
 /* Zone activité*/
 .activité
 {
     grid-area: activité;
-    padding: 4.1em 0em 0em 0em;
-}
-
-.activité > .activité-text
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 0.5em;
-    margin-left: 3.5%; 
+    margin: 1em 5% 0em 5%;
 }
 
 .activité > .activité2
 {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-	grid-template-rows: 19.5em 17.1em;
-	grid-template-areas:
-        "a1 a2 a4 a5"
-        "a1 a3 a4 a6";
-    padding-bottom: 4.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
     width: 100%;
+    height: 70em;
 }
 
 .activité > .activité2 > article > a, .activité > .activité2 > div > article > a
@@ -499,143 +458,62 @@ span.middle-a
     transform: translateY(-50%);
 }
 
-.activité > .activité2 > .ia1
+.activité > .activité2 > article, .activité > .activité2 > div > article
 {
-    grid-area: a1;
     height: 100%;
-    width: 83.5%;
-    background-image: url(image/activites/a1.jpg);
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 1.9em 1.9em 1.9em 1.9em;
     box-shadow: 0em 0em 2em #f2f2f2 ;
-    margin-left: 14%;
 }
 
-.paragaph-a
+.activité > .activité2 > article > a > p, .activité > .activité2 > div > article > a > p
 {
-    margin : 0em 0em -1px 0em;
-    padding : 0em 0em 0em 1.5em;
+    margin-bottom : -1px;
     color: black;
     background-color: white;
-    height: 13.3%;
-    width: 93.96%;
-    border-radius: 0em 0em 1.9em 1.9em;
-    position: relative;
-    border: 1px solid white;
-}
-
-.activité > .activité2 > .ia2
-{
-    grid-area: a2;
-    height: 100%;
-    width: 83.5%;
-    background-image: url(image/activites/a2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 1.9em 1.9em 1.9em 1.9em;
-    box-shadow: 0em 0em 2em #f2f2f2;
-    margin-left: 10%;
-}
-
-.paragaph-a2
-{
-    margin : 0em 0em -1px 0em;
-    padding : 0em 0em 0em 1.5em;
-    color: black;
-    background-color: white;
-    height: 23.32%;
-    width: 93.96%;
+    height: 29.2%;
+    width: 100%;
     border-radius: 0em 0em 1.9em 1.9em;
     position: relative;
 }
 
 .activité > .activité2 > div
 {
-    grid-area: a3;
-    display: flex;
-    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
 }
 
-.activité > .activité2 > div> .ia3
+.activité > .activité2 > .ia1
 {
-    height: 80%;
-    width: 83.5%;
+    background-image: url(image/activites/a1.jpg);
+}
+
+.activité > .activité2 > .ia2
+{
+    background-image: url(image/activites/a2.jpg);
+}
+
+.activité > .activité2 > div > .ia3
+{
     background-image: url(image/activites/a3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 1.9em 1.9em 1.9em 1.9em;
-    box-shadow: 0em 0em 2em #f2f2f2;
-    margin-left: 10%;
-}
-
-.paragaph-a3
-{
-    margin : 0em 0em -1px 0em;
-    padding : 0em 0em 0em 1.5em;
-    color: black;
-    background-color: white;
-    height: 36.5%;
-    width: 93.96%;
-    border-radius: 0em 0em 1.9em 1.9em;
-    position: relative;
 }
 
 .activité > .activité2 > .ia4
 {
-    grid-area: a4;
-    height: 100%;
-    width: 83.5%;
     background-image: url(image/activites/a4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 1.9em 1.9em 1.9em 1.9em;
-    box-shadow: 0em 0em 2em #f2f2f2 ;
-    margin-left: 5.35%;
 }
 
 .activité > .activité2 > .ia5
 {
-    grid-area: a5;
-    height: 77%;
-    width: 82.8%;
     background-image: url(image/activites/a5.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 1.9em 1.9em 1.9em 1.9em;
-    box-shadow: 0em 0em 2em #f2f2f2;
-    margin-left: 2.6%;
 }
 
 .activité > .activité2 > .ia6
 {
-    grid-area: a6;
-    height: 100%;
-    width: 82.8%;
     background-image: url(image/activites/a6.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 1.9em 1.9em 1.9em 1.9em;
-    box-shadow: 0em 0em 2em #f2f2f2;
-    margin-left: 2.6%;
-}
-
-.paragaph-a6
-{
-    margin : 0em 0em -1px 0em;
-    padding : 0em 0em 0em 1.5em;
-    color: black;
-    background-color: white;
-    height: 29.2%;
-    width: 93.96%;
-    border-radius: 0em 0em 1.9em 1.9em;
-    position: relative;
 }
 
 footer
