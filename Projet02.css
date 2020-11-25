@@ -159,6 +159,7 @@ header > .menu
     margin-top: 1.9em;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .top > .filtres > p
@@ -172,6 +173,8 @@ header > .menu
     border-radius: 80px 80px 80px 80px;
     margin: 0.8em;
     padding: 0em;
+
+    box-shadow: 0px 0px 0px white;
     
     display: grid;
     grid-template-columns: 5em auto;
@@ -273,7 +276,7 @@ header > .menu
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: -0.5em;
 }
 
@@ -365,6 +368,7 @@ header > .menu
     align-items: center;
     justify-content: space-around;
     min-height: 44.2em;
+    height: 100%;
 }
 
 .popular > .popular2 > article
