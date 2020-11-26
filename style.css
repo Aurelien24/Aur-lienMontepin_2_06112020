@@ -185,9 +185,7 @@
         border-radius: 80px 80px 80px 80px;
         margin: 0.8em;
         padding: 0em;
-
-        box-shadow: 0px 0px 0px white;
-        
+        background-color: transparent;        
         display: grid;
         grid-template-columns: 5em auto;
         grid-template-rows: 5em;
@@ -268,7 +266,7 @@
         font-size: 1.25em;
     }
 
-    /* Zone hebergement*/
+    /* Zone hebergement  -- Taille fixe des cartes ? */
     .hebergement
     {
         grid-area: hebergement;
@@ -426,6 +424,11 @@
         line-height: 2em;    
     }
 
+    .popular > .popular2 > article > a > div > p
+    {
+        min-width: 90px;
+    }
+
 
     /* Zonne commune a populaire et hébergement*/
     .titre
@@ -456,13 +459,13 @@
     }
 
     /* Zone activité*/
-    .activité
+    .activite
     {
         grid-area: activité;
         padding: 4.1em 0em 0em 0em;
     }
 
-    .activité > .activité-text
+    .activite > .activite-text
     {
         display: flex;
         flex-direction: row;
@@ -471,7 +474,7 @@
         margin-left: 3.5%; 
     }
 
-    .activité > .activité2
+    .activite > .activite2
     {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
@@ -483,7 +486,7 @@
         width: 100%;
     }
 
-    .activité > .activité2 > article > a, .activité > .activité2 > div > article > a
+    .activite > .activite2 > article > a, .activite > .activite2 > div > article > a
     {
         display: flex;
         flex-direction: column-reverse;
@@ -500,7 +503,7 @@
         transform: translateY(-50%);
     }
 
-    .activité > .activité2 > .ia1
+    .activite > .activite2 > .ia1
     {
         grid-area: a1;
         height: 100%;
@@ -527,7 +530,7 @@
         border: 1px solid white;
     }
 
-    .activité > .activité2 > .ia2
+    .activite > .activite2 > .ia2
     {
         grid-area: a2;
         height: 100%;
@@ -553,14 +556,14 @@
         position: relative;
     }
 
-    .activité > .activité2 > div
+    .activite > .activite2 > div
     {
         grid-area: a3;
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .activité > .activité2 > div> .ia3
+    .activite > .activite2 > div> .ia3
     {
         height: 80%;
         width: 83.5%;
@@ -585,7 +588,7 @@
         position: relative;
     }
 
-    .activité > .activité2 > .ia4
+    .activite > .activite2 > .ia4
     {
         grid-area: a4;
         height: 100%;
@@ -599,7 +602,7 @@
         margin-left: 5.35%;
     }
 
-    .activité > .activité2 > .ia5
+    .activite > .activite2 > .ia5
     {
         grid-area: a5;
         height: 77%;
@@ -613,7 +616,7 @@
         margin-left: 2.6%;
     }
 
-    .activité > .activité2 > .ia6
+    .activite > .activite2 > .ia6
     {
         grid-area: a6;
         height: 100%;
@@ -828,9 +831,7 @@
         border-radius: 80px 80px 80px 80px;
         margin: 0.8em;
         padding: 0em;
-
-        box-shadow: 0px 0px 0px white;
-        
+        background-color: transparent;
         display: grid;
         grid-template-columns: 5em auto;
         grid-template-rows: 5em;
@@ -991,6 +992,11 @@
         line-height: 2em;    
     }
 
+    .popular > .popular2 > article > a > div > p
+    {
+        min-width: 90px;
+    }
+
     /* Zone hebergement*/
     .hebergement
     {
@@ -1092,13 +1098,13 @@
     }
 
     /* Zone activité*/
-    .activité
+    .activite
     {
         grid-area: activité;
         margin: 1em 5% 0em 5%;
     }
 
-    .activité > .activité2
+    .activite > .activite2
     {
         display: flex;
         flex-direction: column;
@@ -1108,7 +1114,7 @@
         height: 70em;
     }
 
-    .activité > .activité2 > article > a, .activité > .activité2 > div > article > a
+    .activite > .activite2 > article > a, .activite > .activite2 > div > article > a
     {
         display: flex;
         flex-direction: column-reverse;
@@ -1125,7 +1131,7 @@
         transform: translateY(-50%);
     }
 
-    .activité > .activité2 > article, .activité > .activité2 > div > article
+    .activite > .activite2 > article, .activite > .activite2 > div > article
     {
         height: 100%;
         width: 100%;
@@ -1136,7 +1142,7 @@
         box-shadow: 0em 0em 2em #f2f2f2 ;
     }
 
-    .activité > .activité2 > article > a > p, .activité > .activité2 > div > article > a > p
+    .activite > .activite2 > article > a > p, .activite > .activite2 > div > article > a > p
     {
         margin-bottom : -1px;
         color: black;
@@ -1147,38 +1153,38 @@
         position: relative;
     }
 
-    .activité > .activité2 > div
+    .activite > .activite2 > div
     {
         height: 100%;
         width: 100%;
     }
 
-    .activité > .activité2 > .ia1
+    .activite > .activite2 > .ia1
     {
         background-image: url(images/activites/a1.jpg);
     }
 
-    .activité > .activité2 > .ia2
+    .activite > .activite2 > .ia2
     {
         background-image: url(images/activites/a2.jpg);
     }
 
-    .activité > .activité2 > div > .ia3
+    .activite > .activite2 > div > .ia3
     {
         background-image: url(images/activites/a3.jpg);
     }
 
-    .activité > .activité2 > .ia4
+    .activite > .activite2 > .ia4
     {
         background-image: url(images/activites/a4.jpg);
     }
 
-    .activité > .activité2 > .ia5
+    .activite > .activite2 > .ia5
     {
         background-image: url(images/activites/a5.jpg);
     }
 
-    .activité > .activité2 > .ia6
+    .activite > .activite2 > .ia6
     {
         background-image: url(images/activites/a6.jpg);
     }
@@ -1203,15 +1209,12 @@
         line-height: 2.4em ;
     }
 
-
     footer > aside > P > a
     {
         font-size: large;
         text-decoration: none;
         color: black;
     }
-
-
 
     span, h1, p, h2
     {
