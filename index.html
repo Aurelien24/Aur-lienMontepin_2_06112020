@@ -14,16 +14,23 @@
                 <a href=""><img src="images/logo/Reservia.PNG" title="logo avec lien vide"/></a>
             </div>
             <div class="menu">
-                <div class="h-a">
-                    <div class="input-menu-large selected">
-                        <p>Hébergements</p>
-                    </div> 
-                    <div class="input-menu no-selected">
-                        <p>Activités</p>
-                    </div>
+                <div class="input-menu-large selected">
+                    <p>Hébergements</p>
+                </div> 
+                <div class="input-menu no-selected">
+                    <p>Activités</p>
                 </div>
                 <div class="input-menu s-inscrire no-selected">
                     <p>S'inscrire</p>
+                </div>
+            </div>
+            <!-- Class H-a pour le tel afin de pas s'embéter-->
+            <div class="h-a-tel">
+                <div class="input-menu-large selected">
+                    <p>Hébergements</p>
+                </div> 
+                <div class="input-menu no-selected">
+                    <p>Activités</p>
                 </div>
             </div>
         </header>
@@ -44,45 +51,45 @@
             <div class="filtres">
                 <p>Filtres</p>
                 <button type="button">
-                    <div class="filtre-text">
-                        <p>Économique</p>
-                    </div>
                     <div class="filtre-icone">
                         <div>
                             <i class="fas fa-money-bill-wave"></i>
                         </div>
                     </div>
+                    <div class="filtre-text">
+                        <p>Économique</p>
+                    </div>
                 </button>
                 <button type="button">
-                    <div class="filtre-text">
-                        <p>Familiale</p>
-                    </div>
                     <div class="filtre-icone">
                         <div>
                             <i class="fas fa-child"></i>
                         </div>
                     </div>
+                    <div class="filtre-text">
+                        <p>Familiale</p>
+                    </div>
                 </button>
                 <!-- Romantique ne part pas avec annimaux autorisés. J'ai mis un div sur les deux avant mais, -->
                 <div>
-                    <button type="button">
-                        <div class="filtre-text">
-                            <p>Romantique</p>
-                        </div>
+                    <button type="button"> 
                         <div class="filtre-icone">
                             <div>
                                 <i class="fas fa-heart"></i>
                             </div>
                         </div>
+                        <div class="filtre-text">
+                            <p>Romantique</p>
+                        </div>
                     </button>
                     <button type="button">
-                        <div class="filtre-text">
-                            <p>Annimaux autorisés</p>
-                        </div>
                         <div class="filtre-icone">
                             <div>
-                                    <i class="fas fa-dog"></i>
+                                <i class="fas fa-dog"></i>
                             </div>
+                        </div>
+                        <div class="filtre-text">
+                            <p>Annimaux autorisés</p>
                         </div>
                     </button> 
                 </div>
@@ -93,9 +100,9 @@
             </div>
         </section>
 
-
+        <div class="center">
         <section class="popular">
-            <div class="popular-text"><h1 class="titre">Les plus populaires</h1><i class="fas fa-chart-line"></i></div>
+            <div class="popular-text"><h2 class="titre">Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
             <div class="popular2">
                 <article>
                     <a href="#">
@@ -143,12 +150,12 @@
             </div>
         </section>
         <section class="hebergement">
-            <div class="titre-hebergement"><h1 class="titre">Hébergements à Marseille</h1></div>
+            <div class="titre-hebergement"><h2 class="titre">Hébergements à Marseille</h2></div>
             <div class="hebergement2">
                 <article>
                     <a href="#">
                         <img src="images/hebergements/h1.jpg" title="logo avec lien vide"/>
-                            <p class="paragaph-h">
+                            <p>
                                 <span class="span-title">Auberge la Cannebière</span><br />
                                 Nuit a partir de <span class="span-price">25€</span><br />
                                 <i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star blue-star"></i><i class="fas fa-star grey-star"></i>
@@ -214,6 +221,7 @@
                 </p>
             </div>
         </section>
+        </div>
         <!-- Faire l'image en backgrand dans un div (donc ajouté un div) - Pas réusit a dimantionner la hauteur XD -->
         <section class="activite">
             <div class="activite-text"><p class="titre">Activité à Marseille</p></div>
@@ -227,7 +235,7 @@
                 </article>
                 <article class="ia2">
                     <a href="#" class="lien-activite">
-                        <p class="paragaph-a2">
+                        <p class="paragaph-a">
                             <span class="span-title middle-a">Fort de Pomègues</span>
                         </p>
                     </a>
@@ -235,7 +243,7 @@
                 <div>
                     <article class="ia3">
                         <a href="#" class="lien-activite">
-                            <p class="paragaph-a3">
+                            <p class="paragaph-a">
                                 <span class="span-title middle-a"">Îles du Frioul</span>
                             </p>
                         </a>
@@ -250,14 +258,14 @@
                 </article>            
                 <article class="ia5">
                     <a href="#" class="lien-activite">
-                        <p class="paragaph-a6">
+                        <p class="paragaph-a">
                             <span class="span-title middle-a"">Notre-Dame-de-le-Garde</span>
                         </p>
                     </a>
                 </article>
                 <article class="ia6">
                     <a href="#" class="lien-activite">
-                        <p class="paragaph-a6">
+                        <p class="paragaph-a">
                             <span class="span-title middle-a"">Parc Longchamp</span>
                         </p>
                     </a>
