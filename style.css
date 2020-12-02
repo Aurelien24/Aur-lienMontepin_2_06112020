@@ -31,7 +31,6 @@ a
     margin-top: 1.5em;
 }
 
-
 /*A reprendre - Valable uniquement pour tel*/
 .recherche > form > .map-marquer
 {
@@ -40,7 +39,7 @@ a
     background-color: #F2F2F2;
     border-radius: 20px 0px 0px 20px;
     margin-right: -4px;
-    height: calc(auto +2px);
+    height: calc(auto + 2px);
 }
 
 /*A reprendre - Valable uniquement pour tel*/
@@ -51,65 +50,44 @@ a
     height: auto;
 }
 
-
-
-
-
-/* A merge dans css pc*/
-.filtre-text > p, .filtres > p
+.filtres > div > button, .filtres > div > div > button
 {
-    font-size:calc(7px + 1.2vw);
-    font-weight: bold;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    padding: 0;
+    border: 2px solid #E4E4E4; 
+    background-color: white;
+    border-radius: 80px 80px 80px 80px;
+    margin: 0px 1.5vw 10px 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filtres > div, .filtres > div > div
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filtres > div > button > .filtre-icone, .filtre-icone
+{
+    color:  #0065FC;
+    background-color:  #DEEBFF;
+    border-radius: 100%;
+    margin-left: -2px;
 }
 
 .filtre-icone > div
 {
-    font-size:calc(6px + 1.5vw);
+    height: 100%;
+    width: 100%;
+    display: flex;
 }
 
-.top > .info > p
+.filtre-icone > div > i
 {
-    font-size:calc(6px + 1.3vw);
+    margin: auto;
 }
-
-footer > aside > P > a
-{
-    font-size: large;
-}
-/*toujour a merge*/
-.afficher-plus
-{
-    font-weight: bold;
-    font-size:calc(7px + 1.2vw);
-}           
-
-    .fa-chart-line
-{
-    font-weight: bold;
-    font-size:calc(7px + 1.2vw);
-}
-
-/* Zonne commune a populaire et hébergement*/
-.titre
-{
-    font-size:calc(7px + 1.2vw);
-    font-weight: bold;
-}
-
-/*font-size:calc(8px + 0.6vw); Potentiellement diminuer le vw a cause d'auberge la canebièrre */
-
-.hebergement2 > article > a > p, .paragaph-a, .paragaph-a2, .paragaph-a3, .paragaph-a6, .paragaph-p
-{
-    font-size:calc(8px + 0.6vw);
-    line-height: 2.2vw;
-}
-/*fin du a merge*/
-
-
-
-
 
 .blue-star
 {
@@ -160,50 +138,7 @@ footer > aside > P > a
 
 
 
-
-.filtres > div > div > button, .filtres > div > button
-{
-    padding: 0;
-    border: 2px solid #E4E4E4; 
-    background-color: white;
-    border-radius: 80px 80px 80px 80px;
-    margin: 0px 1.5vw 0px 1.5vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.filtres > div, .filtres > div > div
-{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.filtres > div > button > .filtre-icone, .filtre-icone
-{
-    color:  #0065FC;
-    background-color:  #DEEBFF;
-    border-radius: 100%;
-    margin-left: -2px;
-}
-
-
-
-
-
-.filtre-icone > div
-{
-    height: 100%;
-    display: flex;
-}
-
-.filtre-icone > div > i
-{
-    margin: auto;
-}
-
-@media screen and (min-width: 768px)
+@media screen and (min-width: 992px)
 {
     /* Mise en page général*/
     
@@ -299,6 +234,12 @@ footer > aside > P > a
         font-size:calc(6px + 1vw);
     }
 
+        .top > .info > p
+    {
+        font-size:calc(6px + 1.3vw);
+    }
+
+
     /*Zone a modifier ???*/
     .recherche > form > .map-marquer
     {
@@ -307,7 +248,7 @@ footer > aside > P > a
         background-color: #F2F2F2;
         border-radius: 20px 0px 0px 20px;
         margin-right: -4px;
-        height: calc(auto +2px);
+        height: calc(auto + 2px);
     }
     
     .recherche > form > input[type=text] 
@@ -348,16 +289,26 @@ footer > aside > P > a
 
     .filtres > div > div > button, .filtres > div > button
     {
-    height: calc(13px + 2.8vw);
+        height: calc(13px + 2.8vw);
     }
 
     .filtres > div > button > .filtre-icone, .filtre-icone
     {
-        color:  #0065FC;
-        background-color:  #DEEBFF;
-        border-radius: 100%;
         height: calc(13px + 2.8vw);
         width: calc(13px + 2.8vw);
+    }
+
+    .filtre-text > p, .filtres > p
+    {
+        font-size:calc(7px + 1.2vw);
+        font-weight: bold;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    .filtre-icone > div
+    {
+        font-size:calc(6px + 1.5vw);
     }
 
     /*filtre bouton*/
@@ -405,6 +356,20 @@ footer > aside > P > a
         
     }
 
+    /* Aussi valable pour populaire*/
+    .titre
+    {
+        font-size:calc(7px + 1.2vw);
+    }
+
+    /* Valable dans hebergement, et article*/
+    .hebergement2 > article > a > p, .paragaph-a, .paragaph-a2, .paragaph-a3, .paragaph-a6, .paragaph-p
+    {
+        font-size:calc(8px + 0.6vw);
+        line-height: 2.2vw;
+    }
+
+    /*Zone juste hebergement*/
     .hebergement
     {
         background-color: #f2f2f2;
@@ -493,6 +458,8 @@ footer > aside > P > a
     .fa-chart-line
     {
         margin-top: 1em;
+        font-weight: bold;
+        font-size:calc(7px + 1.2vw);
     }
 
     .popular > .popular2
@@ -547,10 +514,11 @@ footer > aside > P > a
         min-width: 90px;
     }
 
-
-
-
-
+    .afficher-plus
+    {
+        font-weight: bold;
+        font-size:calc(7px + 1.2vw);
+    }    
 
     /* Zone activité*/
     .activite
@@ -632,7 +600,486 @@ footer > aside > P > a
         margin-left: 10%;
     }
 
-    
+    .activite > .activite2 > .ia4
+    {
+        grid-area: a4;
+        height: 100%;
+        width: 83.5%;
+        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+        box-shadow: 1px 1px 1vw #bfbfbf ;
+        margin-left: 5.35%;
+    }
+
+    .activite > .activite2 > .ia5
+    {
+        grid-area: a5;
+        height: 77%;
+        width: 82.8%;
+        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+        box-shadow: 1px 1px 1vw #bfbfbf;
+        margin-left: 2.6%;
+    }
+
+    .activite > .activite2 > .ia6
+    {
+        grid-area: a6;
+        height: 100%;
+        width: 82.8%;
+        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+        box-shadow: 1px 1px 1vw #bfbfbf;
+        margin-left: 2.6%;
+    }
+
+    .paragaph-a
+    {
+        margin : 0em 0px -1px 0px;
+        padding : 0em 0em 0em 1.5vw;
+        background-color: white;
+        height: 4vw;
+        border-radius: 0vw 0vw 1.5vw 1.5vw;
+        position: relative;
+    }
+
+    footer
+    {
+        grid-area: footer;
+        display: flex;
+        background-color: #f2f2f2;
+    }
+
+    footer > aside
+    {
+        width: 28%;
+        padding: 3vw 0px 3vw 4vw;   
+    }
+
+    footer > aside > P
+    {
+        line-height: 2.4em ;
+    }
+
+    footer > aside > P > a
+    {
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px)
+{
+
+    header
+    {
+        margin-top: 6vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size:calc(5px + 3vw);
+    }
+
+    header > .log2
+    {
+        width: 50%;
+        margin-left: 5vw;
+    }
+
+    header > .log2 > a > img
+    {
+        width: 58%;
+    }
+
+    header > .menu > .s-inscrire
+    {
+        width: 25%;
+        margin-right: 6vw;
+        color: #0065FC;
+    }
+
+    header > .menu > .no-tel
+    {
+        display: none;
+    }
+
+    header > .h-a-tel
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2vw;
+    }
+
+    header > .h-a-tel > div
+    {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header > .h-a-tel > .selected
+    {
+        color: #0065FC;
+        border-bottom: 4px solid #0065FC;
+    }
+
+    header > .h-a-tel > .no-selected
+    {
+        border-bottom: 4px solid #f2f2f2;
+    }
+
+    .top
+    {
+        margin:0vw 6vw 0vw 5vw;
+    }
+
+    .top > h1
+    {
+        font-size:calc(4px + 5vw);
+    }
+
+    button, label, input, .top > p, .info > p
+    {
+        font-size: calc(5px + 2.2vw);
+    }
+
+    .recherche
+    {
+        display: flex;
+    }
+
+    .recherche > form > .map-marquer
+    {
+
+    }
+
+    .recherche > form > #recherche
+    {
+        width: calc(100% - 11vw - 5vw - 5em);
+    }
+
+    .recherche > form > .bouton-recherche
+    {
+        font-size:calc(6px + 1.2vw);
+        background-color: #0065FC;
+        border-radius: 0;
+        color : white;
+        border: 0px;
+        padding: 0.8em 1em;
+        border-radius: 0px 20px 20px 0px;
+        margin-left: -4px;
+        height:calc(auto + 120px);
+    }
+
+    .recherche > form > .bouton-recherche-phone
+    {
+        display: none;
+    }
+
+    button
+    {
+        margin-bottom: 1em;
+    }
+
+    .filtres > div > button > .filtre-text > p, .filtre-text > p
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .filtres > div > button > .filtre-icone, .filtre-icone
+    {
+        height: calc(8px + 9vw);
+        width: calc(8px + 9vw);
+        font-size:calc(6px + 3vw);
+    }
+
+    .filtres > div > div > button, .filtres > div > button
+    {
+        height: calc(8px + 9vw);
+    }
+
+    .top > .info
+    {
+        display: flex;
+        flex-shrink: 0;
+        margin-top: 1.3em;
+        margin-left: 0.5em;
+        margin-bottom: 2em;
+        align-items: center;
+    }
+
+    .top > .info > div
+    {
+        border: 1px solid #E4E4E4;
+        border-radius: 100%;
+        width: 1.9vw;
+        height: 1.9vw;
+        padding: 0.5em;
+        text-align: center;
+        flex-shrink: 0;    
+        display: flex;
+        justify-content: center;
+    }
+
+    .top > .info > div > .fa-info
+    {
+        color: #0065fc;
+        font-size: 1.8vw;
+        flex-shrink: 0;
+        
+    }
+
+    .top > .info > p
+    {
+        max-width: 90%;
+        margin-left: 1em;
+    }
+
+
+    body > .center
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    /* Aussi valable pour hebergement*/
+    .titre
+    {
+        font-size:calc(7px + 1.2vw);
+    }
+
+    /* Zone Populaire*/
+    .popular
+    {
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.4em 0em 0em 0em;
+    }
+
+    .popular > .popular-text
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0.5em;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 80%;
+    }
+
+    .fa-chart-line
+    {
+        margin-top: 1em;
+        font-weight: bold;
+        font-size:calc(7px + 1.2vw);
+    }
+
+    .popular > .popular2
+    {
+        display: flex;
+        padding: 0px 1vw 0vw 1vw;
+    }
+
+    .popular > .popular2 > article
+    {
+        margin-bottom: 2vw;
+        box-shadow: 1px 1px 1vw #bfbfbf;
+        border-radius: 1vw;
+        flex-basis: content;
+        margin: 0px 2vw 0px 2vw;
+
+    }
+
+    .popular > .popular2 > article > a
+    {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        background-color: white;
+        border: 6px solid white;
+        border-radius: 1vw;
+    }
+
+    .popular > .popular2 > article > a > img
+    {
+        width: 36.8%;
+        object-fit: cover;
+        border-radius: 1vw 0em 0em 1vw;
+    }
+
+    .popular > .popular2 > article > a > div
+    {
+        margin: 0.9em 9% 0em 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .popular > .popular2 > article > a > div > .paragaph-p
+    {
+        margin: 0; 
+    }
+
+    .popular > .popular2 > article > a > div > p
+    {
+        min-width: 90px;
+    }
+
+    .afficher-plus
+    {
+        font-weight: bold;
+        font-size:calc(7px + 1.2vw);
+    }
+
+    /* Valable dans hebergement, et article*/
+    .hebergement2 > article > a > p, .paragaph-a, .paragaph-a2, .paragaph-a3, .paragaph-a6, .paragaph-p
+    {
+        font-size:calc(8px + 0.6vw);
+        line-height: 2.2vw;
+    }
+
+    /*Zone juste hebergement*/
+    .hebergement
+    {
+        background-color: #f2f2f2;
+        border-radius: 1.5em;
+        margin-left: 3.5vw;
+        margin-right: 1.25vw;
+        padding: 2.4em 2vw 0em 2vw;
+        flex-basis: 60.1vw;
+    }
+
+    .hebergement > .titre-hebergement
+    {
+        margin-bottom: 0.2em;
+    }
+
+    .hebergement > .hebergement2
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .hebergement2 > article
+    {
+        width: 31%;
+        min-width: 193px;
+        margin: 0em 0.5vw 2vw 0.5vw;
+        box-shadow: 1px 1px 1vw #bfbfbf;
+        border-radius: 1vw;
+    }
+
+    .hebergement2 > article > a
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 3px solid white;
+        border-radius: 1vw;
+    }
+
+    .hebergement2 > article > a > img
+    {
+        height: 8vw;
+        object-fit: cover;
+        border: 3px solid white;
+        border-radius: 1vw 1vw 0em 0em;
+    }
+
+    .hebergement2 > article > a > p
+    {
+        margin: 0.5em 1em 0.5em 1em;
+    }
+
+    .alligne-afficher
+    {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    /* Zone activité*/
+    .activite
+    {
+        padding: 4.1em 0em 0em 0em;
+    }
+
+    .activite > .activite-text
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0.5em;
+        margin-left: 3.5%; 
+    }
+
+    .activite > .activite2
+    {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 15.5vw 15.5vw;
+        grid-template-areas:
+            "a1 a2 a4 a5"
+            "a1 a3 a4 a6";
+        padding-bottom: 4.5em;
+        width: 100%;
+    }
+
+    .activite > .activite2 > article > a, .activite > .activite2 > div > article > a
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: stretch;
+        height: 100%;
+        width: 100%;
+        border-radius: 1.9em;  
+    }
+
+    span.middle-a
+    {
+        position: absolute;
+        top: 50%; /* poussé de la moitié de hauteur du référent */
+        transform: translateY(-50%);
+    }
+
+    .activite > .activite2 > .ia1
+    {
+        grid-area: a1;
+        height: 100%;
+        width: 83.5%;
+        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+        box-shadow: 1px 1px 1vw #bfbfbf;
+        margin-left: 14%;
+    }
+
+    .activite > .activite2 > .ia2
+    {
+        grid-area: a2;
+        height: 100%;
+        width: 83.5%;
+        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+        box-shadow: 1px 1px 1vw #bfbfbf;
+        margin-left: 10%;
+    }
+
+    .activite > .activite2 > div
+    {
+        grid-area: a3;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .activite > .activite2 > div> .ia3
+    {
+        height: 80%;
+        width: 83.5%;
+        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+        box-shadow: 1px 1px 1vw #bfbfbf;
+        margin-left: 10%;
+    }
 
     .activite > .activite2 > .ia4
     {
@@ -691,9 +1138,15 @@ footer > aside > P > a
     {
         line-height: 2.4em ;
     }
+
+    footer > aside > P > a
+    {
+        font-size: large;
+    }
+
 }
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 768px)
 {
 
     header
@@ -823,8 +1276,6 @@ footer > aside > P > a
 
     .filtres > div > div > button, .filtres > div > button
     {
-        margin: 0;
-        padding: 0;
         height: calc(8px + 9vw);
     }
 
@@ -835,6 +1286,7 @@ footer > aside > P > a
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        align-items: center;
     }
 
     .top > .info > div
@@ -1011,7 +1463,7 @@ footer > aside > P > a
         margin-left: 5vw;
         display: flex;
         align-items: center;
-        font-size:calc(6px + 2.2vw);
+        font-size: calc(7px + 2vw);
     }
 
     /*A lire*/
