@@ -516,7 +516,6 @@ a
 
     .afficher-plus
     {
-        font-weight: bold;
         font-size:calc(7px + 1.2vw);
     }    
 
@@ -860,26 +859,22 @@ a
 
     .popular > .popular-text
     {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        text-align: center;
         margin-bottom: 0.5em;
         padding-left: 10%;
         padding-right: 10%;
         width: 80%;
     }
 
-    .fa-chart-line
+    .popular-text > i
     {
-        margin-top: 1em;
-        font-weight: bold;
-        font-size:calc(7px + 1.2vw);
+        display: none;
     }
 
     .popular > .popular2
     {
         display: flex;
-        padding: 0px 1vw 0vw 1vw;
+        padding: 0px 1vw 3vw 1vw;
     }
 
     .popular > .popular2 > article
@@ -887,16 +882,15 @@ a
         margin-bottom: 2vw;
         box-shadow: 1px 1px 1vw #bfbfbf;
         border-radius: 1vw;
-        flex-basis: content;
-        margin: 0px 2vw 0px 2vw;
-
+        margin: 0px 1vw 0px 1vw;
+        width: 30.6vw;
+        display: flex;
     }
 
     .popular > .popular2 > article > a
     {
         display: flex;
         flex-direction: row;
-        height: 100%;
         background-color: white;
         border: 6px solid white;
         border-radius: 1vw;
@@ -927,12 +921,6 @@ a
         min-width: 90px;
     }
 
-    .afficher-plus
-    {
-        font-weight: bold;
-        font-size:calc(7px + 1.2vw);
-    }
-
     /* Valable dans hebergement, et article*/
     .hebergement2 > article > a > p, .paragaph-a, .paragaph-a2, .paragaph-a3, .paragaph-a6, .paragaph-p
     {
@@ -943,17 +931,14 @@ a
     /*Zone juste hebergement*/
     .hebergement
     {
-        background-color: #f2f2f2;
-        border-radius: 1.5em;
-        margin-left: 3.5vw;
-        margin-right: 1.25vw;
-        padding: 2.4em 2vw 0em 2vw;
+        padding: 2.4em 1vw 0em 1vw;
         flex-basis: 60.1vw;
     }
 
     .hebergement > .titre-hebergement
     {
         margin-bottom: 0.2em;
+        text-align: center;
     }
 
     .hebergement > .hebergement2
@@ -965,9 +950,8 @@ a
 
     .hebergement2 > article
     {
-        width: 31%;
-        min-width: 193px;
-        margin: 0em 0.5vw 2vw 0.5vw;
+        width: 30.6vw;
+        margin: 0em 1vw 2vw 1vw;
         box-shadow: 1px 1px 1vw #bfbfbf;
         border-radius: 1vw;
     }
@@ -983,7 +967,7 @@ a
 
     .hebergement2 > article > a > img
     {
-        height: 8vw;
+        height: 12vw;
         object-fit: cover;
         border: 3px solid white;
         border-radius: 1vw 1vw 0em 0em;
@@ -996,24 +980,21 @@ a
 
     .alligne-afficher
     {
-        display: flex;
-        align-items: center;
-        flex-grow: 1;
+        text-align: center;
+        font-size:calc(7px + 1.2vw);
     }
 
     /* Zone activité*/
     .activite
     {
         padding: 4.1em 0em 0em 0em;
+        background-color: #f2f2f2;
     }
 
     .activite > .activite-text
     {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        text-align: center;
         margin-bottom: 0.5em;
-        margin-left: 3.5%; 
     }
 
     .activite > .activite2
@@ -1125,7 +1106,6 @@ a
     {
         grid-area: footer;
         display: flex;
-        background-color: #f2f2f2;
     }
 
     footer > aside
