@@ -11,13 +11,13 @@
     <body class="grid-conteneur">
         <header>
             <div class=log2>
-                <a href=""><img src="images/logo/Reservia.PNG" title="logo avec lien vide"/></a>
+                <a href="#"><img src="images/logo/Reservia.PNG" title="logo avec lien vide"/></a>
             </div>
             <div class="menu">
-                <div class="input-menu-large selected">
+                <div class="input-menu-large selected  no-tel">
                     <p>Hébergements</p>
                 </div> 
-                <div class="input-menu no-selected">
+                <div class="input-menu no-selected  no-tel">
                     <p>Activités</p>
                 </div>
                 <div class="input-menu s-inscrire no-selected">
@@ -50,48 +50,50 @@
             </div>
             <div class="filtres">
                 <p>Filtres</p>
-                <button type="button">
-                    <div class="filtre-icone">
-                        <div>
-                            <i class="fas fa-money-bill-wave"></i>
-                        </div>
-                    </div>
-                    <div class="filtre-text">
-                        <p>Économique</p>
-                    </div>
-                </button>
-                <button type="button">
-                    <div class="filtre-icone">
-                        <div>
-                            <i class="fas fa-child"></i>
-                        </div>
-                    </div>
-                    <div class="filtre-text">
-                        <p>Familiale</p>
-                    </div>
-                </button>
-                <!-- Romantique ne part pas avec annimaux autorisés. J'ai mis un div sur les deux avant mais, -->
                 <div>
-                    <button type="button"> 
+                    <button type="button">
                         <div class="filtre-icone">
                             <div>
-                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-money-bill-wave"></i>
                             </div>
                         </div>
                         <div class="filtre-text">
-                            <p>Romantique</p>
+                            <p>Économique</p>
                         </div>
                     </button>
                     <button type="button">
                         <div class="filtre-icone">
                             <div>
-                                <i class="fas fa-dog"></i>
+                                <i class="fas fa-child"></i>
                             </div>
                         </div>
                         <div class="filtre-text">
-                            <p>Annimaux autorisés</p>
+                            <p>Familiale</p>
                         </div>
-                    </button> 
+                    </button>
+                    <!-- Romantique ne part pas avec annimaux autorisés. J'ai mis un div sur les deux avant mais, -->
+                    <div>
+                        <button type="button"> 
+                            <div class="filtre-icone">
+                                <div>
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="filtre-text">
+                                <p>Romantique</p>
+                            </div>
+                        </button>
+                        <button type="button">
+                            <div class="filtre-icone">
+                                <div>
+                                    <i class="fas fa-dog"></i>
+                                </div>
+                            </div>
+                            <div class="filtre-text">
+                                <p>Annimaux autorisés</p>
+                            </div>
+                        </button> 
+                    </div>
                 </div>
             </div>
             <div class="info">
