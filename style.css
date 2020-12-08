@@ -1,10 +1,3 @@
-/*
-problème
-1- taille standar carte seize ? % ou px ? - soit %, vh vw ou sinon obligatoirement imposé. 
-
-3- hébergement git hub page
-
-
 /* Mise en place police général*/
 @font-face {
     font-family: 'Raleway';
@@ -14,7 +7,7 @@ problème
     font-style: normal;
 }
 
-/*Gestion commune des police*/
+/*Gestion commune du gras, lien, police*/
 input, .top > h1, .top > .filtres > p, header, .span-title, .span-price, .afficher-plus, .titre
 {
     font-weight: bold;
@@ -73,7 +66,6 @@ body
     background-color: white;
     border: none;
 }
-
 
 .filtre-icone > div
 {
@@ -136,11 +128,8 @@ body
 
 
 
-@media screen and (min-width: 992px)
+@media screen and (min-width: 1072px)
 {
-    /* Mise en page général*/
-    
-
     /* Zone Header*/
     header
     {
@@ -414,7 +403,6 @@ body
     .hebergement2 > a > article > p
     {
         margin: 0em 1em 0.5em 1em;
-        /* a modif? */
         line-height: 1.7vw;
     }
 
@@ -426,8 +414,6 @@ body
     }
 
     /* Zone Populaire*/
-
-    
     .popular
     {
         background-color: #f2f2f2;
@@ -659,6 +645,11 @@ body
         padding: 3vw 0px 3vw 4vw;   
     }
 
+    footer > aside > h2
+    {
+        font-size: calc(7px + 1.2vw);
+    }
+
     footer > aside > P
     {
         line-height: 2.4em ;
@@ -670,7 +661,7 @@ body
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 991px)
+@media screen and (min-width: 769px) and (max-width: 1071px)
 {
 
     header
@@ -1013,7 +1004,6 @@ body
     .hebergement2 > a > article > p
     {
         margin: 0em 1em 0.5em 1em;
-        /* a modif? */
         line-height: 2.2vw;
     }
 
@@ -1154,6 +1144,11 @@ body
         padding: 3vw 0px 3vw 4vw;   
     }
 
+    footer > aside > h2
+    {
+        font-size: calc(6px + 2vw);
+    }
+
     footer > aside > P
     {
         line-height: 2.4em ;
@@ -1255,7 +1250,6 @@ body
         border-radius: 20px 0px 0px 20px;
     }
 
-    /*A reprendre - Valable uniquement pour tel*/
     .recherche > form > input[type=text] 
     {
         border: 1px solid #F2F2F2;
@@ -1394,55 +1388,6 @@ body
         border-radius: 5vw;
         height: 35vw;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* exemple !!!
-
-        .popular > .popular2 > a > article
-    {
-        height: 100%;
-        background-color: white;
-        border-radius: 1vw;
-        display: grid;
-        grid-template-columns: 36.8% auto;
-        grid-template-rows: auto auto;
-    }
-
-    .popular > .popular2 > a > article > img
-    {
-        object-fit: cover;
-        border-radius: 1vw 0em 0em 1vw;
-        border: 6px solid white;
-        width: calc(100% - 6px);
-        height: calc(100% - 12px);
-        grid-column: 1;
-        grid-row: 1 / 3;
-    }
-
-    .popular > .popular2 > a > article > .span-title
-    {
-        grid-column: 2;
-        grid-row: 1;
-        margin: 0.9em 5% 0em 15px;
-    }
-
-    .popular > .popular2 > a > article > div
-    {
-        margin: 1px 5% 0em 15px;
-        grid-column: 2;
-        grid-row: 2;
-    }*/
 
     .popular > .popular2 > a > article
     {
@@ -1633,9 +1578,18 @@ body
         padding-top: 2.5em;
     }
 
+    footer > aside > h2
+    {
+        font-size: calc(6px + 2.2vw);
+    }
+
+    footer > aside > P
+    {
+        font-size: calc(5px + 2vw);
+    }
+
     footer > aside > P, footer > aside > h2
     {
         line-height: 2em ;
-        font-size: calc(6px + 2.2vw);
     }   
 }
