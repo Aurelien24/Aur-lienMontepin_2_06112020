@@ -927,6 +927,9 @@ body
         grid-row: 1 / 3;
     }
 
+    /*Mettre max-heigt pour titre*/
+    /*Mettre pading left titre*/
+
     .popular > .popular2 > a > article > .span-title
     {
         grid-column: 2;
