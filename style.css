@@ -79,6 +79,13 @@ body
     margin: auto;
 }
 
+/*Annimation button. Ne fonctionne pas correctement avec focus*/
+.button:active, .button:active > .filtre-text
+{
+    background-color: #0065fc;
+    color: white;
+}
+
 .blue-star
 {
     color:  #0065fc;
@@ -835,7 +842,6 @@ body
         color: #0065fc;
         font-size: 1.8vw;
         flex-shrink: 0;
-        
     }
 
     .top > .info > p
@@ -930,9 +936,12 @@ body
 
     .popular > .popular2 > a > article > div
     {
-        margin: 0.9em 5% 0em 10px;
+        margin: 0em 5% 0em 10px;
         grid-column: 2;
         grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .popular > .popular2 > a > article > div > .paragaph-p
