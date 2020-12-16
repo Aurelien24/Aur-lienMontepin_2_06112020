@@ -471,12 +471,12 @@ body
 
     .popular > .popular2 > a > article
     {
-        height: 100%;
+        min-height: 100%;
         background-color: white;
         border-radius: 1vw;
         display: grid;
         grid-template-columns: 36.8% auto;
-        grid-template-rows: auto auto;
+        grid-template-rows: min-content auto;
     }
 
     .popular > .popular2 > a > article > img
@@ -495,13 +495,17 @@ body
         grid-column: 2;
         grid-row: 1;
         margin: 0.9em 5% 0em 15px;
+        height: min-content;
     }
 
     .popular > .popular2 > a > article > div
     {
-        margin: 1px 5% 0em 15px;
+        margin: 1vw 5% 0em 15px;
         grid-column: 2;
         grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .popular > .popular2 > a > article > div > .paragaph-p
@@ -1408,7 +1412,7 @@ body
         border-radius: 5vw;
         display: grid;
         grid-template-columns: 36.8% auto;
-        grid-template-rows: auto auto;
+        grid-template-rows: min-content auto;
     }
 
     .popular > .popular2 > a > article > img
@@ -1427,11 +1431,12 @@ body
         grid-column: 2;
         grid-row: 1;
         margin: 0.5em 5% 0em 5%;
+        height: min-content;
     }
 
     .popular > .popular2 > a > article > div
     {
-        margin: 0em 5% 0.7em 5%;
+        margin: 2vw 5% 5vw 5%;
         grid-column: 2;
         grid-row: 2;
         display: flex;
@@ -1502,9 +1507,15 @@ body
         border: 3px solid white;
     }
 
+    .hebergement2 > a > article > h2
+    {
+        margin: 0.5em 1em 0em 1em;
+        line-height: calc(5px + 2vw + 0.5em);
+    }
+
     .hebergement2 > a > article > p
     {
-        margin: 0.5em 1em 0.5em 1em;
+        margin: 0em 1em 0.5em 1em;
         line-height: calc(5px + 2vw + 0.5em);
     }
 

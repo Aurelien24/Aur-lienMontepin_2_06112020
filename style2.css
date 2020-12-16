@@ -1,0 +1,398 @@
+@media screen and (max-width: 1200px)
+{
+
+    header
+    {
+        margin-top: 6vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size:calc(5px + 3vw);
+    }
+
+    header > .log2
+    {
+        width: 50%;
+        margin-left: 5vw;
+    }
+
+    header > .log2 > a > img
+    {
+        width: 58%;
+    }
+
+    header > .menu > .s-inscrire
+    {
+        width: 25%;
+        margin-right: 6vw;
+        color: #0065FC;
+    }
+
+    header > .menu > .no-tel
+    {
+        display: none;
+    }
+
+    header > .h-a-tel
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2vw;
+    }
+
+    header > .h-a-tel > div
+    {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header > .h-a-tel > .selected
+    {
+        color: #0065FC;
+        border-bottom: 4px solid #0065FC;
+    }
+
+    header > .h-a-tel > .no-selected
+    {
+        border-bottom: 4px solid #f2f2f2;
+    }
+
+    .top
+    {
+        margin:0vw 6vw 0vw 5vw;
+    }
+
+    .top > h1
+    {
+        font-size:calc(4px + 5vw);
+    }
+
+    button, input, .top > p, .info > p, .recherche > form > div
+    {
+        font-size: calc(5px + 2.2vw);
+    }
+
+    .recherche
+    {
+        display: flex;
+    }
+
+    .recherche > form > #recherche
+    {
+        width: calc(100% - 11vw - 5vw - 5em);
+    }
+
+    .recherche > form > .bouton-recherche-phone
+    {
+        border: 1px solid #0065FC;
+        background-color: #0065FC;
+        border-radius: 0;
+        color : white;
+        border-left: 0px;
+        padding: 0.9em 1em;
+        border-radius: 33%;
+        margin-left: -5vw;
+        font-family: 'FontAwesome';
+    }
+
+    .recherche > form > .bouton-recherche
+    {
+        display: none;
+    }
+
+    button
+    {
+        margin-bottom: 1em;
+    }
+
+    .filtres > div > button > .filtre-text > p, .filtre-text > p
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .filtres > div > button > .filtre-icone, .filtre-icone
+    {
+        height: calc(8px + 9vw);
+        width: calc(8px + 9vw);
+        font-size:calc(6px + 3vw);
+    }
+
+    .filtres > div > div > button, .filtres > div > button
+    {
+        margin: 0;
+        padding: 0;
+        height: calc(8px + 9vw);
+    }
+
+    .info
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .top > .info > div
+    {
+        border: 1px solid #E4E4E4;
+        border-radius: 100%;
+        width: calc(5px + 2.2vw);
+        height: calc(5px + 2.2vw);
+        padding: 0.5em;
+        text-align: center;
+        flex-shrink: 0;    
+        display: flex;
+        justify-content: center;
+    }
+
+    .top > .info > div > .fa-info
+    {
+        color: #0065fc;
+        font-size: calc(5px + 2.2vw);
+        flex-shrink: 0;
+    }
+
+    .info > p
+    {
+        margin-left: 1em;
+    }
+
+    /*A retirer du commun*/
+    .titre
+    {
+        font-size:calc(7px + 2.2vw);
+    }
+
+    .fa-chart-line
+    {
+        font-size:calc(7px + 2.2vw);
+    }
+
+    .popular > .popular-text
+    {
+        /*pas changement*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        /*changement*/
+        margin: 1em 5vw 0.5em 5vw;
+        width: 90%;
+    }
+
+    /*Pas eu a changer*/
+    .popular > .popular2
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 4vw;
+    }
+
+    /*changement*/
+    .popular > .popular2 > article
+    {
+        box-shadow: 1px 1px 1vw #bfbfbf;
+        width: 90%;
+        margin-bottom: 4vw;
+        border-radius: 5vw;
+        flex-basis: content;
+    }
+
+    .popular > .popular2 > article > a
+    {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        background-color: white;
+        border: 3px solid white;
+        border-radius: 5vw;
+    }
+
+    .popular > .popular2 > article > a > img
+    {
+        width: 40%;
+        object-fit: cover;
+        border-radius: 5vw 0em 0em 5vw;
+    }
+
+    .popular > .popular2 > article > a > div
+    {
+        margin: 0.5em 5% 0em 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .hebergement2 > article > a > p, .paragaph-a, .paragaph-a2, .paragaph-a3, .paragaph-a6, .paragaph-p, .blue-star, .grey-star
+    {
+        font-size:calc(5px + 2vw);
+    }
+
+    .span-title
+    {
+        font-size:calc(6px + 2vw);
+    }
+
+    .popular > .popular2 > article > a > div > .paragaph-p
+    {
+        margin: 0; 
+    }
+
+    .popular > .popular2 > article > a > div > .paragaph-star
+    {
+        margin: 10px 0px 5px 0px;
+    }
+
+
+    /*A lire*/
+
+    /*Changement total*/
+    .hebergement
+    {
+        width: 100%;
+    }
+
+    .hebergement > .titre-hebergement
+    {
+        margin: 1em 5vw 0.5em 5vw;
+    }
+
+    .hebergement > .hebergement2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .hebergement2 > article
+    {
+        width: 90%;
+        margin: 0vw 5vw 4vw 5vw;
+        box-shadow: 1px 1px 1vw #bfbfbf;
+        border-radius: 5vw;
+    }
+
+    .hebergement2 > article > a
+    {
+        /*pas changement*/
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 3px solid white;
+        /*changement*/
+        border-radius: 5vw;
+    }
+
+    .hebergement2 > article > a > img
+    {
+        height: 30vw;
+        object-fit: cover;
+        border-radius: 5vw 5vw 0em 0em;
+    }
+
+    .hebergement2 > article > a > p
+    {
+        margin: 0.5em 1em 0.5em 1em;
+        line-height: calc(5px + 2vw + 0.5em);
+    }
+
+    .alligne-afficher
+    {
+        margin-left: 5vw;
+        display: flex;
+        align-items: center;
+        font-size:calc(6px + 2.2vw);
+    }
+
+    /*A lire*/
+
+    .activite > .activite-text
+    {
+        margin: 1em 5vw 0.5em 5vw;
+    }
+
+    .activite > .activite2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+    .activite > .activite2 > article > a, .activite > .activite2 > div > article > a
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+        border-radius: 1.9em;  
+    }
+
+    span.middle-a
+    {
+        position: absolute;
+        top: 50%; /* poussé de la moitié de hauteur du référent */
+        transform: translateY(-50%);
+    }
+
+    .activite > .activite2 > article, .activite > .activite2 > div > article
+    {
+        margin: 0vw 5vw 4vw 5vw;
+        height: 50vw;
+        width: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 5vw;
+        box-shadow: 1px 1px 1vw #bfbfbf;
+    }
+
+    .activite > .activite2 > article > a > p, .activite > .activite2 > div > article > a > p
+    {
+        margin-bottom : -1px;
+        background-color: white;
+        height: 20%;
+        border-radius: 0vw 0vw 5vw 5vw;
+        position: relative;
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
+    .activite > .activite2 > div
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        padding: 0px 5vw 0px 5vw;
+        margin-bottom: 0.5em;
+    }
+
+    footer > aside
+    {
+        padding-top: 2.5em;
+    }
+
+    footer > aside > P, footer > aside > h2
+    {
+        line-height: 2em ;
+        font-size: calc(6px + 2.2vw);
+    }
+
+
+    
+}
+    

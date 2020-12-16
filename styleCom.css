@@ -1,0 +1,193 @@
+/* Mise en place police général*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-VariableFont_wght.ttf') format('truetype'),
+         url('fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    margin: 0px;
+    font-family: 'Raleway';
+}
+
+header
+{
+    font-weight: bold;
+}
+
+input, label, button, .top > h1, .top > .filtres
+{
+    font-weight: bold;
+}
+
+h2
+{
+    font-size:calc(7px + 1.2vw);
+}
+
+a
+{
+	text-decoration: none;
+    color: black;
+}
+
+
+/*la taille n'es plus commune*/
+
+
+
+.top > .recherche
+{
+    margin-top: 1.5em;
+}
+
+.recherche > form > .map-marquer
+{
+
+    padding: 0.8em 1em;
+    background-color: #F2F2F2;
+    border-radius: 20px 0px 0px 20px;
+    margin-right: -4px;
+    height: calc(auto +2px);
+}
+
+.recherche > form > input[type=text] 
+{
+    border: 1px solid #F2F2F2;
+    padding: 0.8em 1em;
+    height: auto;
+}
+
+
+
+.span-title
+{
+    font-weight: bold;
+}
+
+.span-price
+{
+    font-weight: bold;
+}
+
+.afficher-plus
+{
+    font-weight: bold;
+}           
+
+
+
+.titre
+{
+    font-weight: bold;
+}
+
+
+
+.blue-star
+{
+    color:  #0065fc;
+}
+
+.grey-star
+{
+       color: #D9D9D9;
+}
+
+.ia1, .ia2, .ia3, .ia4, .ia5, .ia6
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.paragaph-a
+    {
+        margin : 0em 0px -1px 0px;
+        padding : 0em 0em 0em 1.5vw;
+        background-color: white;
+        height: 4vw;
+        border-radius: 0vw 0vw 1.5vw 1.5vw;
+        position: relative;
+    }
+
+.activite > .activite2 > .ia1
+{
+    background-image: url(images/activites/a1.jpg);
+}
+
+.activite > .activite2 > .ia2
+{
+    background-image: url(images/activites/a2.jpg);
+}
+
+.activite > .activite2 > div > .ia3
+{
+    background-image: url(images/activites/a3.jpg);
+}
+
+.activite > .activite2 > .ia4
+{
+    background-image: url(images/activites/a4.jpg);
+}
+
+.activite > .activite2 > .ia5
+{
+    background-image: url(images/activites/a5.jpg);
+}
+
+.activite > .activite2 > .ia6
+{
+    background-image: url(images/activites/a6.jpg);
+}
+
+.filtres > div > div > button, .filtres > div > button
+{
+    padding: 0;
+    border: 2px solid #E4E4E4; 
+    background-color: white;
+    border-radius: 80px 80px 80px 80px;
+    margin: 0px 1.5vw 10px 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filtres > div, .filtres > div, div
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.filtres > div > button > .filtre-icone, .filtre-icone
+{
+    color:  #0065FC;
+    background-color:  #DEEBFF;
+    border-radius: 100%;
+    margin-left: -2px;
+}
+
+.filtre-icone > div
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.filtre-icone > div > i
+{
+    margin: auto;
+}
+
+.popular
+{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
