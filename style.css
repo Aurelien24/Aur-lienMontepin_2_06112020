@@ -7,8 +7,13 @@
     font-style: normal;
 }
 
+/* mettre le menu en nav, mettre l'animation au survol, mettre des ancres dans le menu, et mettre la version pc en principal pour opti css, ajouté lien gitpage et repo en livrable, supprimer les fichier en trop repo git hub, et améliorer timing et contenu présentatation. Prendre un suppport de présentation ? Caier des charges + flex + grid +... - Un power point ET mieux connaitre git hub pas juste git*/  
+ /* Le bug de taille sur firefox - fait*/
+
+
+
 /*Gestion commune du gras, lien, police*/
-input, .top > h1, .top > .filtres > p, header, .span-title, .span-price, .afficher-plus, .titre
+input, .top > .filtres > p, .span-title, .span-price, .afficher-plus
 {
     font-weight: bold;
 }
@@ -19,10 +24,108 @@ a
     color: black;
 }
 
+
+/*Le gros du code*/
+
+
 body
 {
     margin:0;
     font-family: 'Raleway';
+}
+
+header
+{
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+    display: flex;
+    justify-content: space-between;
+    font-size:calc(7px + 1.2vw);
+}
+
+header > .log2
+{
+    margin-top: 2em;
+}
+
+header > .log2 > a > img
+{
+    width: 33%;
+}
+
+header > .menu
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu > .menu-duo
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2em;
+}
+
+.menu-duo > a > .selected, .selected
+{
+    border-top: 2px solid #0065fc;
+    color: #0065FC;
+}
+
+.activite-menu
+{
+    margin-left: 2em;
+}
+
+.menu-duo > a > .no-selected, .no-selected
+{
+    border-top: 2px solid white;
+}
+
+
+.menu-duo > a > .input-menu-large, .input-menu-large
+{
+    padding-top: 2em;
+    width: 37.2%;
+    width: min-content;
+}
+
+.menu-duo > a > .input-menu, .input-menu
+{
+    padding-top: 2em;
+    width: 30%;
+}
+
+.menu > .s-inscrire
+{
+    font-weight: bold;
+    color: #0065FC;
+}
+
+
+
+/* Zone suppérieur*/
+.top
+{
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+}
+
+.top > h1
+{
+    margin-bottom: 0.4em;
+    font-size:calc(8px + 1.4vw);
+}
+
+.top > p
+{
+    margin-top: 0.4em;
+    font-size:calc(6px + 1vw);
+}
+
+.top > .info > p
+{
+    font-size:calc(6px + 1.3vw);
 }
 
 .top > .recherche
@@ -33,6 +136,44 @@ body
 .recherche > form
 {
     display: flex;
+}
+
+.recherche > form > div
+{
+    font-size:calc(6px + 1.2vw);
+    padding: 0.8em 1em;
+    background-color: #F2F2F2;
+    border-radius: 20px 0px 0px 20px;
+    margin-right: -4px;
+}
+
+.recherche > form > input[type=text] 
+{
+    font-size:calc(6px + 1.2vw);
+    border: 1px solid #F2F2F2;
+    padding: 0.8em 1em;
+}
+
+.recherche > form > .bouton-recherche
+{
+    font-size:calc(6px + 1.2vw);
+    background-color: #0065FC;
+    color : white;
+    border: none;
+    padding: 0.8em 1em;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.recherche > form > .bouton-recherche-phone
+{
+    display:none;
+}
+
+.top > .filtres
+{
+    margin-top: 1.9em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .filtres > div, .filtres > div > .contener-button
@@ -46,25 +187,36 @@ body
 {
     display: flex;
     align-items: center;
-    padding: 0;
     border: 2px solid #E4E4E4; 
-    background-color: white;
     border-radius: 80px 80px 80px 80px;
     margin: 0px 1.5vw 10px 1.5vw;
+    height: calc(10px + 2.8vw);
 }
 
-.button > .filtre-icone
+.filtres > div > .button > .filtre-icone, .filtre-icone
 {
+    height: calc(14px + 2.8vw);
+    width: calc(14px + 2.8vw);
+    font-size:calc(6px + 1.5vw);
+    margin-left: -3px;
     background-color: #DEEBFF;
     color:  #0065FC;
     border-radius: 100%;
     border: none;
 }
 
-.button > .filtre-text
+    .button > .filtre-text
 {
     background-color: white;
     border: none;
+}
+
+.filtre-text, .filtres > p
+{
+    font-size:calc(7px + 1.2vw);
+    font-weight: bold; /* A SUPPR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! A SUPR */
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .filtre-icone > div
@@ -86,6 +238,121 @@ body
     color: white;
 }
 
+.top > .info
+{
+    display: flex;
+    margin-top: 1.3em;
+    margin-left: 0.5em;
+    margin-bottom: 2em;
+    align-items: center;
+}
+
+.top > .info > div
+{
+    border: 1px solid #E4E4E4;
+    border-radius: 100%;
+    width: 1.9vw;
+    height: 1.9vw;
+    padding: 0.5em;
+    text-align: center;
+    flex-shrink: 0;    
+    display: flex;
+    justify-content: center;
+}
+
+.top > .info > div > .fa-info
+{
+    color: #0065fc;
+    font-size: 1.8vw;
+    flex-shrink: 0;
+    
+}
+
+.top > .info > p
+{
+    max-width: 90%;
+    margin-left: 1em;
+}
+
+body > .center
+{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+/* Aussi valable pour populaire*/
+.titre
+{
+    font-size:calc(7px + 1.2vw);
+}
+
+/* Valable dans hebergement, et article*/
+.hebergement2 > a > article > p, .span-title, .paragaph-a, .paragaph-a2, .paragaph-a3, .paragaph-a6, .paragaph-p
+{
+    font-size:calc(8px + 0.6vw);
+}
+
+/*Zone juste hebergement*/
+.hebergement
+{
+    background-color: #f2f2f2;
+    border-radius: 1.5em;
+    margin-left: 3.5vw;
+    margin-right: 1.25vw;
+    padding: 2.4em 2vw 0em 2vw;
+    flex-basis: 60.1vw;
+}
+
+.hebergement > .titre-hebergement
+{
+    margin-bottom: 0.2em;
+}
+
+.hebergement > .hebergement2
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hebergement2 > a
+{
+    width: 31%;
+    min-width: 193px;
+    margin: 0em 0.5vw 2vw 0.5vw;
+    box-shadow: 1px 1px 1vw #bfbfbf;
+    border-radius: 1vw;
+}
+
+.hebergement2 > a > article
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1vw;
+}
+
+.hebergement2 > a > article > img
+{
+    height: 8vw;
+    object-fit: cover;
+    border: 6px solid white;
+    border-radius: 1vw 1vw 0em 0em;
+}
+
+.hebergement2 > a > article > h2
+{
+    margin: 0.5em 1em 0em 1em;
+    line-height: 1.7vw;
+}
+
+.hebergement2 > a > article > p
+{
+    margin: 0em 1em 0.5em 1em;
+    line-height: 1.7vw;
+}
+
 .blue-star
 {
     color:  #0065fc;
@@ -93,14 +360,154 @@ body
 
 .grey-star
 {
-       color: #D9D9D9;
+   color: #D9D9D9;
 }
 
-.ia1, .ia2, .ia3, .ia4, .ia5, .ia6
+.alligne-afficher
 {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+/* Zone Populaire*/
+.popular
+{
+    background-color: #f2f2f2;
+    border-radius: 1.5em;
+    margin-right: 3.5vw;
+    margin-left: 1.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.4em 0em 0em 0em;
+    flex-basis: 30.3vw;
+}
+
+.popular > .popular-text
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+}
+
+.fa-chart-line
+{
+    margin-top: 1em;
+    font-size:calc(7px + 1.2vw);
+}
+
+.popular > .popular2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.popular > .popular2 > a
+{
+    width: 81.88%;
+    margin-bottom: 2vw;
+    box-shadow: 1px 1px 1vw #bfbfbf;
+    border-radius: 1vw;
+    height: 27%;
+}
+
+.popular > .popular2 > a > article
+{
+    height: 100%;
+    background-color: white;
+    border-radius: 1vw;
+    display: grid;
+    grid-template-columns: 36.8% auto;
+    grid-template-rows: min-content auto;
+}
+
+.popular > .popular2 > a > article > img
+{
+    object-fit: cover;
+    border-radius: 1vw 0em 0em 1vw;
+    border: 6px solid white;
+    width: calc(100% - 6px);
+    height: calc(100% - 12px);
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.popular > .popular2 > a > article > .span-title
+{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0.9em 5% 0em 15px;
+    height: min-content;
+}
+
+.popular > .popular2 > a > article > div
+{
+    margin: 1vw 5% 0em 15px;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular > .popular2 > a > article > div > .paragaph-p
+{
+    margin: 0; 
+}
+
+.popular > .popular2 > a > article > div > p
+{
+    min-width: 90px;
+}
+
+.afficher-plus
+{
+    font-size:calc(7px + 1.2vw);
+}    
+
+/* Zone activité*/
+.activite
+{
+    padding: 4.1em 0em 0em 0em;
+}
+
+.activite > .activite-text
+{
+    margin-bottom: 0.5em;
+    margin-left: 3.5%; 
+}
+
+.activite > .activite2
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 15.5vw 15.5vw;
+    grid-template-areas:
+        "a1 a2 a4 a5"
+        "a1 a3 a4 a6";
+    padding-bottom: 4.5em;
+}
+
+.activite > .activite2 > a > article, .activite > .activite2 > div > a > article
+{
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: stretch;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.9em;  
+}
+
+span.middle-a
+{
+    position: absolute;
+    top: 50%; /* poussé de la moitié de hauteur du référent */
+    transform: translateY(-50%);
 }
 
 .activite > .activite2 > .ia1
@@ -133,543 +540,111 @@ body
     background-image: url(images/activites/a6.jpg);
 }
 
-
-
-@media screen and (min-width: 1072px)
+.ia1, .ia2, .ia3, .ia4, .ia5, .ia6
 {
-    /* Zone Header*/
-    header
-    {
-        margin-left: 3.5vw;
-        margin-right: 3.5vw;
-        display: flex;
-        justify-content: space-between;
-        font-size:calc(7px + 1.2vw);
-    }
-
-    header > .log2
-    {
-        margin-top: 3.6em;
-    }
-
-    header > .log2 > a > img
-    {
-        width: 33%;
-    }
-
-    header > .menu
-    {
-        text-align: right;
-        width: 32.5%;
-        float: right;
-        height: 9em; 
-        min-width: 400px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .h-a-tel
-    {
-        display: none;
-    }
-
-    .menu > .selected
-    {
-        border-top: 2px solid #0065fc;
-        color: #0065FC;
-    }
-
-    .menu > .no-selected
-    {
-        border-top: 2px solid white;
-    }
-
-
-    .menu > .input-menu-large
-    {
-        width: 37.2%;
-    }
-
-    .menu > .input-menu
-    {
-        padding-top: 2em;
-        width: 30%;
-    }
-
-    .menu > .s-inscrire
-    {
-        font-weight: bold;
-        color: #0065FC;
-    }
-
-    .menu > div
-    {
-        display: flex;
-        justify-content: center;
-        padding-top: 2em;
-    }
-
-    /* Zone suppérieur*/
-    .top
-    {
-        margin-left: 3.5vw;
-        margin-right: 3.5vw;
-    }
-
-    .top > h1
-    {
-        margin-bottom: 0.4em;
-        font-size:calc(8px + 1.4vw);
-    }
-
-    .top > p
-    {
-        margin-top: 0.4em;
-        font-size:calc(6px + 1vw);
-    }
-
-        .top > .info > p
-    {
-        font-size:calc(6px + 1.3vw);
-    }
-
-    .recherche > form > div
-    {
-        font-size:calc(6px + 1.2vw);
-        padding: 0.8em 1em;
-        background-color: #F2F2F2;
-        border-radius: 20px 0px 0px 20px;
-        margin-right: -4px;
-    }
-    
-    .recherche > form > input[type=text] 
-    {
-        font-size:calc(6px + 1.2vw);
-        font-weight: bold;
-        border: 1px solid #F2F2F2;
-        padding: 0.8em 1em;
-    }
-    
-    .recherche > form > .bouton-recherche
-    {
-        font-size:calc(6px + 1.2vw);
-        background-color: #0065FC;
-        border-radius: 0;
-        color : white;
-        border: 0px;
-        padding: 0.8em 1em;
-        border-radius: 0px 20px 20px 0px;
-        margin-left: -4px;
-    }
-
-    .recherche > form > .bouton-recherche-phone
-    {
-        display:none;
-    }
-
-    .top > .filtres
-    {
-
-        margin-top: 1.9em;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .filtres > div > div > .button, .filtres > div > .button
-    {
-        height: calc(10px + 2.8vw);
-    }
-
-    .filtres > div > .button > .filtre-icone, .filtre-icone
-    {
-        height: calc(14px + 2.8vw);
-        width: calc(14px + 2.8vw);
-        font-size:calc(6px + 1.5vw);
-        margin-left: -3px;
-    }
-
-    .filtre-text, .filtres > p
-    {
-        font-size:calc(7px + 1.2vw);
-        font-weight: bold;
-        margin-left: 1vw;
-        margin-right: 1vw;
-    }
-
-    .top > .info
-    {
-        display: flex;
-        flex-shrink: 0;
-        margin-top: 1.3em;
-        margin-left: 0.5em;
-        margin-bottom: 2em;
-        align-items: center;
-    }
-
-    .top > .info > div
-    {
-        border: 1px solid #E4E4E4;
-        border-radius: 100%;
-        width: 1.9vw;
-        height: 1.9vw;
-        padding: 0.5em;
-        text-align: center;
-        flex-shrink: 0;    
-        display: flex;
-        justify-content: center;
-    }
-
-    .top > .info > div > .fa-info
-    {
-        color: #0065fc;
-        font-size: 1.8vw;
-        flex-shrink: 0;
-        
-    }
-
-    .top > .info > p
-    {
-        max-width: 90%;
-        margin-left: 1em;
-    }
-
-    body > .center
-    {
-        display: flex;
-        flex-direction: row-reverse;
-        
-    }
-
-    /* Aussi valable pour populaire*/
-    .titre
-    {
-        font-size:calc(7px + 1.2vw);
-    }
-
-    /* Valable dans hebergement, et article*/
-    .hebergement2 > a > article > p, .span-title, .paragaph-a, .paragaph-a2, .paragaph-a3, .paragaph-a6, .paragaph-p
-    {
-        font-size:calc(8px + 0.6vw);
-    }
-
-    /*Zone juste hebergement*/
-    .hebergement
-    {
-        background-color: #f2f2f2;
-        border-radius: 1.5em;
-        margin-left: 3.5vw;
-        margin-right: 1.25vw;
-        padding: 2.4em 2vw 0em 2vw;
-        flex-basis: 60.1vw;
-    }
-
-    .hebergement > .titre-hebergement
-    {
-        margin-bottom: 0.2em;
-    }
-
-    .hebergement > .hebergement2
-    {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .hebergement2 > a
-    {
-        width: 31%;
-        min-width: 193px;
-        margin: 0em 0.5vw 2vw 0.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        border-radius: 1vw;
-    }
-
-    .hebergement2 > a > article
-    {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        border-radius: 1vw;
-    }
-
-    .hebergement2 > a > article > img
-    {
-        height: 8vw;
-        object-fit: cover;
-        border: 6px solid white;
-        border-radius: 1vw 1vw 0em 0em;
-    }
-
-    .hebergement2 > a > article > h2
-    {
-        margin: 0.5em 1em 0em 1em;
-        line-height: 1.7vw;
-    }
-
-    .hebergement2 > a > article > p
-    {
-        margin: 0em 1em 0.5em 1em;
-        line-height: 1.7vw;
-    }
-
-    .alligne-afficher
-    {
-        display: flex;
-        align-items: center;
-        flex-grow: 1;
-    }
-
-    /* Zone Populaire*/
-    .popular
-    {
-        background-color: #f2f2f2;
-        border-radius: 1.5em;
-        margin-right: 3.5vw;
-        margin-left: 1.25em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2.4em 0em 0em 0em;
-        flex-basis: 30.3vw;
-    }
-
-    .popular > .popular-text
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 0.5em;
-        padding-left: 10%;
-        padding-right: 10%;
-        width: 80%;
-    }
-
-    .fa-chart-line
-    {
-        margin-top: 1em;
-        font-weight: bold;
-        font-size:calc(7px + 1.2vw);
-    }
-
-    .popular > .popular2
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-    }
-
-    .popular > .popular2 > a
-    {
-        width: 81.88%;
-        margin-bottom: 2vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        border-radius: 1vw;
-        height: 27%;
-    }
-
-    .popular > .popular2 > a > article
-    {
-        min-height: 100%;
-        background-color: white;
-        border-radius: 1vw;
-        display: grid;
-        grid-template-columns: 36.8% auto;
-        grid-template-rows: min-content auto;
-    }
-
-    .popular > .popular2 > a > article > img
-    {
-        object-fit: cover;
-        border-radius: 1vw 0em 0em 1vw;
-        border: 6px solid white;
-        width: calc(100% - 6px);
-        height: calc(100% - 12px);
-        grid-column: 1;
-        grid-row: 1 / 3;
-    }
-
-    .popular > .popular2 > a > article > .span-title
-    {
-        grid-column: 2;
-        grid-row: 1;
-        margin: 0.9em 5% 0em 15px;
-        height: min-content;
-    }
-
-    .popular > .popular2 > a > article > div
-    {
-        margin: 1vw 5% 0em 15px;
-        grid-column: 2;
-        grid-row: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .popular > .popular2 > a > article > div > .paragaph-p
-    {
-        margin: 0; 
-    }
-
-    .popular > .popular2 > a > article > div > p
-    {
-        min-width: 90px;
-    }
-
-    .afficher-plus
-    {
-        font-size:calc(7px + 1.2vw);
-    }    
-
-    /* Zone activité*/
-    .activite
-    {
-        padding: 4.1em 0em 0em 0em;
-    }
-
-    .activite > .activite-text
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 0.5em;
-        margin-left: 3.5%; 
-    }
-
-    .activite > .activite2
-    {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: 15.5vw 15.5vw;
-        grid-template-areas:
-            "a1 a2 a4 a5"
-            "a1 a3 a4 a6";
-        padding-bottom: 4.5em;
-        width: 100%;
-    }
-
-    .activite > .activite2 > a > article, .activite > .activite2 > div > a > article
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        align-content: stretch;
-        height: 100%;
-        width: 100%;
-        border-radius: 1.9em;  
-    }
-
-    span.middle-a
-    {
-        position: absolute;
-        top: 50%; /* poussé de la moitié de hauteur du référent */
-        transform: translateY(-50%);
-    }
-
-    .activite > .activite2 > .ia1
-    {
-        grid-area: a1;
-        height: 100%;
-        width: 83.5%;
-        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        margin-left: 14%;
-    }
-
-    .activite > .activite2 > .ia2
-    {
-        grid-area: a2;
-        height: 100%;
-        width: 83.5%;
-        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        margin-left: 10%;
-    }
-
-    .activite > .activite2 > div
-    {
-        grid-area: a3;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .activite > .activite2 > div> .ia3
-    {
-        height: 80%;
-        width: 83.5%;
-        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        margin-left: 10%;
-    }
-
-    .activite > .activite2 > .ia4
-    {
-        grid-area: a4;
-        height: 100%;
-        width: 83.5%;
-        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf ;
-        margin-left: 5.35%;
-    }
-
-    .activite > .activite2 > .ia5
-    {
-        grid-area: a5;
-        height: 77%;
-        width: 82.8%;
-        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        margin-left: 2.6%;
-    }
-
-    .activite > .activite2 > .ia6
-    {
-        grid-area: a6;
-        height: 100%;
-        width: 82.8%;
-        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        margin-left: 2.6%;
-    }
-
-    .paragaph-a
-    {
-        margin : 0em 0px -1px 0px;
-        padding : 0em 0em 0em 1.5vw;
-        background-color: white;
-        height: 4vw;
-        border-radius: 0vw 0vw 1.5vw 1.5vw;
-        position: relative;
-    }
-
-    footer
-    {
-        grid-area: footer;
-        display: flex;
-        background-color: #f2f2f2;
-    }
-
-    footer > aside
-    {
-        width: 28%;
-        padding: 3vw 0px 3vw 4vw;   
-    }
-
-    footer > aside > h2
-    {
-        font-size: calc(7px + 1.2vw);
-    }
-
-    footer > aside > P
-    {
-        line-height: 2.4em ;
-    }
-
-    footer > aside > P > a
-    {
-        font-size: large;
-    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.activite > .activite2 > .ia1
+{
+    grid-area: a1;
+    width: 83.5%;
+    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+    box-shadow: 1px 1px 1vw #bfbfbf;
+    margin-left: 14%;
+}
+
+.activite > .activite2 > .ia2
+{
+    grid-area: a2;
+    width: 83.5%;
+    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+    box-shadow: 1px 1px 1vw #bfbfbf;
+    margin-left: 10%;
+}
+
+.activite > .activite2 > div
+{
+    grid-area: a3;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.activite > .activite2 > div> .ia3
+{
+    height: 80%;
+    width: 83.5%;
+    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+    box-shadow: 1px 1px 1vw #bfbfbf;
+    margin-left: 10%;
+}
+
+.activite > .activite2 > .ia4
+{
+    grid-area: a4;
+    width: 83.5%;
+    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+    box-shadow: 1px 1px 1vw #bfbfbf ;
+    margin-left: 5.35%;
+}
+
+.activite > .activite2 > .ia5
+{
+    grid-area: a5;
+    height: 77%;
+    width: 82.8%;
+    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+    box-shadow: 1px 1px 1vw #bfbfbf;
+    margin-left: 2.6%;
+}
+
+.activite > .activite2 > .ia6
+{
+    grid-area: a6;
+    width: 82.8%;
+    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+    box-shadow: 1px 1px 1vw #bfbfbf;
+    margin-left: 2.6%;
+}
+
+.paragaph-a
+{
+    margin : 0em 0px -1px 0px;
+    padding : 0em 0em 0em 1.5vw;
+    background-color: white;
+    height: 4vw;
+    border-radius: 0vw 0vw 1.5vw 1.5vw;
+    position: relative;
+}
+
+footer
+{
+    grid-area: footer;
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+footer > aside
+{
+    width: 28%;
+    padding: 3vw 0px 3vw 4vw;   
+}
+
+footer > aside > h2
+{
+    font-size: calc(7px + 1.2vw);
+}
+
+footer > aside > P
+{
+    line-height: 2.4em ;
+}
+
+footer > aside > P > a
+{
+    font-size: large;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1071px)
@@ -677,11 +652,7 @@ body
 
     header
     {
-        margin-top: 6vw;
-        display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
-        align-items: center;
         font-size:calc(5px + 2vw);
     }
 
@@ -696,16 +667,17 @@ body
         width: 40%;
     }
 
+    header > .menu
+    {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
     header > .menu > .s-inscrire
     {
         width: 25%;
         margin-right: 6vw;
         color: #0065FC;
-    }
-
-    header > .menu > .no-tel
-    {
-        display: none;
     }
 
     header > .h-a-tel
@@ -1206,11 +1178,6 @@ body
         width: 25%;
         margin-right: 6vw;
         color: #0065FC;
-    }
-
-    header > .menu > .no-tel
-    {
-        display: none;
     }
 
     header > .h-a-tel
