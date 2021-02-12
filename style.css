@@ -7,12 +7,11 @@
     font-style: normal;
 }
 
-/* mettre le menu en nav, mettre l'animation au survol, mettre des ancres dans le menu, et mettre la version pc en principal pour opti css, ajouté lien gitpage et repo en livrable, supprimer les fichier en trop repo git hub, et améliorer timing et contenu présentatation. Prendre un suppport de présentation ? Caier des charges + flex + grid +... - Un power point ET mieux connaitre git hub pas juste git*/  
- /* Le bug de taille sur firefox - fait*/
+/*  opti css, ajouté lien gitpage et repo en livrable, supprimer les fichier en trop repo git hub, et améliorer timing et contenu présentatation. Prendre un suppport de présentation ? Caier des charges + flex + grid +... - Un power point ET mieux connaitre git hub pas juste git*/  
 
 
 
-/*Gestion commune du gras, lien, police*/
+
 input, .top > .filtres > p, .span-title, .span-price, .afficher-plus
 {
     font-weight: bold;
@@ -24,10 +23,6 @@ a
     color: black;
 }
 
-
-/*Le gros du code*/
-
-
 body
 {
     margin:0;
@@ -38,25 +33,24 @@ header
 {
     margin-left: 3.5vw;
     margin-right: 3.5vw;
-    display: flex;
-    justify-content: space-between;
     font-size:calc(7px + 1.2vw);
-}
-
-header > .log2
-{
-    margin-top: 2em;
-}
-
-header > .log2 > a > img
-{
-    width: 33%;
 }
 
 header > .menu
 {
     display: flex;
     justify-content: space-between;
+}
+
+.log2
+{
+    margin-top: 2.4em;
+    width: 75%;
+}
+
+.log2 > a > img
+{
+    width: 7vw;
 }
 
 .menu > .menu-duo
@@ -86,14 +80,12 @@ header > .menu
 .menu-duo > a > .input-menu-large, .input-menu-large
 {
     padding-top: 2em;
-    width: 37.2%;
     width: min-content;
 }
 
 .menu-duo > a > .input-menu, .input-menu
 {
     padding-top: 2em;
-    width: 30%;
 }
 
 .menu > .s-inscrire
@@ -205,7 +197,7 @@ header > .menu
     border: none;
 }
 
-    .button > .filtre-text
+.button > .filtre-text
 {
     background-color: white;
     border: none;
@@ -231,8 +223,7 @@ header > .menu
     margin: auto;
 }
 
-/*Annimation button. Ne fonctionne pas correctement avec focus*/
-.button:active, .button:active > .filtre-text
+.button:hover, .button:hover > .filtre-text
 {
     background-color: #0065fc;
     color: white;
@@ -255,7 +246,6 @@ header > .menu
     height: 1.9vw;
     padding: 0.5em;
     text-align: center;
-    flex-shrink: 0;    
     display: flex;
     justify-content: center;
 }
@@ -264,13 +254,10 @@ header > .menu
 {
     color: #0065fc;
     font-size: 1.8vw;
-    flex-shrink: 0;
-    
 }
 
 .top > .info > p
 {
-    max-width: 90%;
     margin-left: 1em;
 }
 
@@ -545,23 +532,30 @@ span.middle-a
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+    box-shadow: 1px 1px 1vw #bfbfbf;
+}
+
+.ia1, .ia2, .ia3, .ia4
+{
+    width: 83.5%;
+}
+
+.ia5, .ia6
+{
+    width: 82.8%;
+    margin-left: 2.6%;
 }
 
 .activite > .activite2 > .ia1
 {
     grid-area: a1;
-    width: 83.5%;
-    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-    box-shadow: 1px 1px 1vw #bfbfbf;
     margin-left: 14%;
 }
 
 .activite > .activite2 > .ia2
 {
     grid-area: a2;
-    width: 83.5%;
-    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-    box-shadow: 1px 1px 1vw #bfbfbf;
     margin-left: 10%;
 }
 
@@ -575,18 +569,12 @@ span.middle-a
 .activite > .activite2 > div> .ia3
 {
     height: 80%;
-    width: 83.5%;
-    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-    box-shadow: 1px 1px 1vw #bfbfbf;
     margin-left: 10%;
 }
 
 .activite > .activite2 > .ia4
 {
     grid-area: a4;
-    width: 83.5%;
-    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-    box-shadow: 1px 1px 1vw #bfbfbf ;
     margin-left: 5.35%;
 }
 
@@ -594,19 +582,11 @@ span.middle-a
 {
     grid-area: a5;
     height: 77%;
-    width: 82.8%;
-    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-    box-shadow: 1px 1px 1vw #bfbfbf;
-    margin-left: 2.6%;
 }
 
 .activite > .activite2 > .ia6
 {
     grid-area: a6;
-    width: 82.8%;
-    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-    box-shadow: 1px 1px 1vw #bfbfbf;
-    margin-left: 2.6%;
 }
 
 .paragaph-a
@@ -652,58 +632,60 @@ footer > aside > P > a
 
     header
     {
-        flex-wrap: wrap;
         font-size:calc(5px + 2vw);
-    }
-
-    header > .log2
-    {
-        width: 50%;
-        margin-left: 5vw;
-    }
-
-    header > .log2 > a > img
-    {
-        width: 40%;
     }
 
     header > .menu
     {
-        flex-direction: row-reverse;
         flex-wrap: wrap;
+    }
+
+    header > .menu > .log2
+    {
+        width: 50%;
+        margin-left: 5vw;
+        order: 1;
+    }
+
+    header > .menu > .log2 > a > img
+    {
+        width: 40%;
     }
 
     header > .menu > .s-inscrire
     {
         width: 25%;
         margin-right: 6vw;
-        color: #0065FC;
+        order: 2;
     }
 
-    header > .h-a-tel
+    header > .menu > .menu-duo
     {
         width: 100%;
         display: flex;
         justify-content: space-around;
         margin-top: 2vw;
+        order: 3;
     }
 
-    header > .h-a-tel > div
+    header > .menu > .menu-duo > a > div
     {
         width: 50%;
         display: flex;
         justify-content: space-around;
     }
 
-    header > .h-a-tel > .selected
+    header > .menu > .menu-duo > a > .selected
     {
         color: #0065FC;
         border-bottom: 4px solid #0065FC;
+        border-top: none;
     }
 
-    header > .h-a-tel > .no-selected
+    header > .menu > .menu-duo > a > .no-selected
     {
         border-bottom: 4px solid #f2f2f2;
+        border-top: none;
     }
 
     .top
@@ -727,50 +709,9 @@ footer > aside > P > a
         display: flex;
     }
 
-    .recherche > form > div
-    {
-        padding: 0.8em 1em;
-        background-color: #F2F2F2;
-        border-radius: 20px 0px 0px 20px;
-    }
-
-    .recherche > form > input[type=text] 
-    {
-        border: 1px solid #F2F2F2;
-        padding: 0.8em 1em;
-    }
-
     .recherche > form > #recherche
     {
         width: calc(100% - 11vw - 5vw - 5em);
-    }
-
-    .recherche > form > .bouton-recherche
-    {
-        font-size:calc(6px + 1.2vw);
-        background-color: #0065FC;
-        border-radius: 0;
-        color : white;
-        border: 0px;
-        padding: 0.8em 1em;
-        border-radius: 0px 20px 20px 0px;
-        margin-left: -4px;
-    }
-
-    .recherche > form > .bouton-recherche-phone
-    {
-        display: none;
-    }
-
-    .filtres
-    {
-        margin-top: 2em;
-    }
-
-    .filtres > div > .button > .filtre-text, .filtre-text
-    {
-        margin-left: 10px;
-        margin-right: 10px;
     }
 
     .filtres > div > .button > .filtre-icone, .filtre-icone
@@ -790,48 +731,14 @@ footer > aside > P > a
         margin-bottom: 1em;
     }
 
-    .top > .info
-    {
-        display: flex;
-        flex-shrink: 0;
-        margin-top: 1.3em;
-        margin-left: 0.5em;
-        margin-bottom: 2em;
-        align-items: center;
-    }
-
-    .top > .info > div
-    {
-        border: 1px solid #E4E4E4;
-        border-radius: 100%;
-        width: 1.9vw;
-        height: 1.9vw;
-        padding: 0.5em;
-        text-align: center;
-        flex-shrink: 0;    
-        display: flex;
-        justify-content: center;
-    }
-
     .top > .info > div > .fa-info
     {
-        color: #0065fc;
         font-size: 1.8vw;
-        flex-shrink: 0;
     }
-
-    .top > .info > p
-    {
-        max-width: 90%;
-        margin-left: 1em;
-    }
-
 
     body > .center
     {
-        display: flex;
         flex-direction: column;
-        
     }
 
     /* Aussi valable pour hebergement*/
@@ -841,66 +748,33 @@ footer > aside > P > a
     }
 
     /* Zone Populaire*/
+
     .popular
     {
-        background-color: #f2f2f2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2.4em 0em 0em 0em;
-    }
-
-    .popular > .popular-text
-    {
-        text-align: center;
-        margin-bottom: 0.5em;
-        padding-left: 10%;
-        padding-right: 10%;
-        width: 80%;
-    }
-
-    .popular-text > i
-    {
-        display: none;
+        margin: 0px;
     }
 
     .popular > .popular2
     {
         display: flex;
-        padding: 0px 1vw 4.5em 1vw;
+        justify-content: space-around;
     }
 
     .popular > .popular2 > a
     {
-        margin-bottom: 2vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        border-radius: 1vw;
-        margin: 0px 1vw 0px 1vw;
-        width: 30.6vw;
-        display: flex;
+        width: 90%;
     }
 
     .popular > .popular2 > a > article
     {
-        display: flex;
-        flex-direction: row;
-        background-color: white;
-        border-radius: 1vw;
-        display: grid;
-        grid-template-columns: 36.8% auto;
         grid-template-rows: auto auto;
     }
 
     .popular > .popular2 > a > article > img
     {
-        width: 36.8%;
-        object-fit: cover;
-        border-radius: 1vw 0em 0em 1vw;
         border: 4px solid white;
         width: calc(100% - 8px);
-        height: calc(100% - 16px);
-        grid-column: 1;
-        grid-row: 1 / 3;
+        height: calc(100% - 8px);
     }
 
     /*Mettre max-heigt pour titre*/
@@ -908,29 +782,7 @@ footer > aside > P > a
 
     .popular > .popular2 > a > article > .span-title
     {
-        grid-column: 2;
-        grid-row: 1;
         margin: 0.9em 5% 0em 10px;
-    }
-
-    .popular > .popular2 > a > article > div
-    {
-        margin: 0em 5% 0em 10px;
-        grid-column: 2;
-        grid-row: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .popular > .popular2 > a > article > div > .paragaph-p
-    {
-        margin: 0; 
-    }
-
-    .popular > .popular2 > a > article > div > p
-    {
-        min-width: 90px;
     }
 
     /* Valable dans hebergement, et article*/
@@ -942,8 +794,9 @@ footer > aside > P > a
     /*Zone juste hebergement*/
     .hebergement
     {
-        padding: 2.4em 1vw 0em 1vw;
-        flex-basis: 60.1vw;
+        padding: 2.4em 10vw 0em 10vw;
+        margin: 0px;
+        background-color: white;
     }
 
     .hebergement > .titre-hebergement
@@ -954,199 +807,53 @@ footer > aside > P > a
 
     .hebergement > .hebergement2
     {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .hebergement2 > a
     {
-        width: 30.6vw;
-        margin: 0em 1vw 2vw 1vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        border-radius: 1vw;
+        width: 38.5vw;
+        margin: 0em 0vw 3vw 0vw;
+        border-radius: 1.9em;
     }
 
     .hebergement2 > a > article
     {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        border-radius: 1vw;
+        border-radius: 1.9em;
     }
 
     .hebergement2 > a > article > img
     {
-        height: 12vw;
-        object-fit: cover;
+        height: 18vw;
         border: 4px solid white;
-        border-radius: 1vw 1vw 0em 0em;
+        border-radius: 1.9em 1.9em 0em 0em;
     }
 
-    .hebergement2 > a > article > h2
+    .hebergement2 > a > article > h2, .hebergement2 > a > article > p
     {
-        margin: 0.5em 1em 0em 1em;
         line-height: 2.2vw;
     }
 
-    .hebergement2 > a > article > p
+    .activite
     {
-        margin: 0em 1em 0.5em 1em;
-        line-height: 2.2vw;
+        background-color: #f2f2f2;
+        margin-top: 3em;
     }
 
     .alligne-afficher
     {
-        text-align: center;
         font-size:calc(7px + 1.2vw);
-        padding-bottom: 1.5em;
-    }
-
-    /* Zone activité*/
-    .activite
-    {
-        padding: 2.4em 0em 0em 0em;
-        background-color: #f2f2f2;
-    }
-
-    .activite > .activite-text
-    {
-        text-align: center;
-        margin-bottom: 0.5em;
-    }
-
-    .activite > .activite2
-    {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: 15.5vw 15.5vw;
-        grid-template-areas:
-            "a1 a2 a4 a5"
-            "a1 a3 a4 a6";
-        padding-bottom: 4.5em;
-        width: 100%;
-    }
-
-    .activite > .activite2 > a > article, .activite > .activite2 > div > a > article
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        align-content: stretch;
-        height: 100%;
-        width: 100%;
-        border-radius: 1.9em;  
-    }
-
-    span.middle-a
-    {
-        position: absolute;
-        top: 50%; /* poussé de la moitié de hauteur du référent */
-        transform: translateY(-50%);
-    }
-
-    .activite > .activite2 > .ia1
-    {
-        grid-area: a1;
-        height: 100%;
-        width: 83.5%;
-        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        margin-left: 14%;
-    }
-
-    .activite > .activite2 > .ia2
-    {
-        grid-area: a2;
-        height: 100%;
-        width: 83.5%;
-        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        margin-left: 10%;
-    }
-
-    .activite > .activite2 > div
-    {
-        grid-area: a3;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .activite > .activite2 > div> .ia3
-    {
-        height: 80%;
-        width: 83.5%;
-        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        margin-left: 10%;
-    }
-
-    .activite > .activite2 > .ia4
-    {
-        grid-area: a4;
-        height: 100%;
-        width: 83.5%;
-        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf ;
-        margin-left: 5.35%;
-    }
-
-    .activite > .activite2 > .ia5
-    {
-        grid-area: a5;
-        height: 77%;
-        width: 82.8%;
-        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        margin-left: 2.6%;
-    }
-
-    .activite > .activite2 > .ia6
-    {
-        grid-area: a6;
-        height: 100%;
-        width: 82.8%;
-        border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-        box-shadow: 1px 1px 1vw #bfbfbf;
-        margin-left: 2.6%;
-    }
-
-    .paragaph-a
-    {
-        margin : 0em 0px -1px 0px;
-        padding : 0em 0em 0em 1.5vw;
-        background-color: white;
-        height: 4vw;
-        border-radius: 0vw 0vw 1.5vw 1.5vw;
-        position: relative;
     }
 
     footer
     {
-        grid-area: footer;
-        display: flex;
-    }
-
-    footer > aside
-    {
-        width: 28%;
-        padding: 3vw 0px 3vw 4vw;   
+        background-color: white;
     }
 
     footer > aside > h2
     {
         font-size: calc(6px + 2vw);
     }
-
-    footer > aside > P
-    {
-        line-height: 2.4em ;
-    }
-
-    footer > aside > P > a
-    {
-        font-size: large;
-    }
-
 }
 
 @media screen and (max-width: 768px)
@@ -1309,8 +1016,7 @@ footer > aside > P > a
         width: calc(5px + 2.2vw);
         height: calc(5px + 2.2vw);
         padding: 0.5em;
-        text-align: center;
-        flex-shrink: 0;    
+        text-align: center;  
         display: flex;
         justify-content: center;
         margin-top: 1vw;
@@ -1319,9 +1025,7 @@ footer > aside > P > a
 
     .top > .info > div > .fa-info
     {
-        color: #0065fc;
         font-size: calc(5px + 2.2vw);
-        flex-shrink: 0;
     }
 
     .info > p
