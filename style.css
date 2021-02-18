@@ -9,8 +9,25 @@
 
 /*  opti css, ajouté lien gitpage et repo en livrable, supprimer les fichier en trop repo git hub, et améliorer timing et contenu présentatation. Prendre un suppport de présentation ? Caier des charges + flex + grid +... - Un power point ET mieux connaitre git hub pas juste git*/  
 
+/*Gestion taille police pc*/
 
+/*taille 1 - Titre*/
+h1, h2
+{
+    font-size: calc(8px + 1.4vw);
+}
 
+/*taille 2 - filtre éco marseil, recherche, Afficher plus...*/
+.recherche > form > div, .recherche > form > input, .filtre, .afficher-plus
+{
+    font-size: calc(7px + 1.2vw);
+}
+
+/*taille 3 - nav, i, com...*/
+nav, .top > p, .info, h3, article > p, article > div > p, footer > aside > p > a
+{
+    font-size: calc(6px + 1vw);
+}
 
 input, .top > .filtres > p, .span-title, .span-price, .afficher-plus
 {
@@ -33,7 +50,6 @@ header
 {
     margin-left: 3.5vw;
     margin-right: 3.5vw;
-    font-size:calc(7px + 1.2vw);
 }
 
 header > .menu
@@ -105,18 +121,12 @@ header > .menu
 .top > h1
 {
     margin-bottom: 0.4em;
-    font-size:calc(8px + 1.4vw);
 }
 
 .top > p
 {
     margin-top: 0.4em;
-    font-size:calc(6px + 1vw);
-}
 
-.top > .info > p
-{
-    font-size:calc(6px + 1.3vw);
 }
 
 .top > .recherche
@@ -131,7 +141,6 @@ header > .menu
 
 .recherche > form > div
 {
-    font-size:calc(6px + 1.2vw);
     padding: 0.8em 1em;
     background-color: #F2F2F2;
     border-radius: 20px 0px 0px 20px;
@@ -140,14 +149,12 @@ header > .menu
 
 .recherche > form > input[type=text] 
 {
-    font-size:calc(6px + 1.2vw);
     border: 1px solid #F2F2F2;
     padding: 0.8em 1em;
 }
 
 .recherche > form > .bouton-recherche
 {
-    font-size:calc(6px + 1.2vw);
     background-color: #0065FC;
     color : white;
     border: none;
@@ -188,7 +195,6 @@ header > .menu
 {
     height: calc(14px + 2.8vw);
     width: calc(14px + 2.8vw);
-    font-size:calc(6px + 1.5vw);
     margin-left: -3px;
     background-color: #DEEBFF;
     color:  #0065FC;
@@ -204,7 +210,6 @@ header > .menu
 
 .filtre-text, .filtres > p
 {
-    font-size:calc(7px + 1.2vw);
     margin-left: 1vw;
     margin-right: 1vw;
 }
@@ -251,7 +256,6 @@ header > .menu
 .top > .info > div > .fa-info
 {
     color: #0065fc;
-    font-size: 1.8vw;
 }
 
 .top > .info > p
@@ -264,18 +268,6 @@ body > .center
     display: flex;
     flex-direction: row-reverse;
     
-}
-
-/* Aussi valable pour populaire*/
-.titre
-{
-    font-size:calc(7px + 1.2vw);
-}
-
-/* Valable dans hebergement, et article*/
-.hebergement2 > a > article > p, .span-title, .paragaph-a, .paragaph-a2, .paragaph-a3, .paragaph-a6, .paragaph-p
-{
-    font-size:calc(8px + 0.6vw);
 }
 
 /*Zone juste hebergement*/
@@ -326,7 +318,7 @@ body > .center
     border-radius: 1vw 1vw 0em 0em;
 }
 
-.hebergement2 > a > article > h2
+.hebergement2 > a > article > h3
 {
     margin: 0.5em 1em 0em 1em;
     line-height: 1.7vw;
@@ -381,7 +373,6 @@ body > .center
 .fa-chart-line
 {
     margin-top: 1em;
-    font-size:calc(7px + 1.2vw);
 }
 
 .popular > .popular2
@@ -449,11 +440,6 @@ body > .center
 {
     min-width: 90px;
 }
-
-.afficher-plus
-{
-    font-size:calc(7px + 1.2vw);
-}    
 
 /* Zone activité*/
 .activite
@@ -610,27 +596,35 @@ footer > aside
     padding: 3vw 0px 3vw 4vw;   
 }
 
-footer > aside > h2
-{
-    font-size: calc(7px + 1.2vw);
-}
-
 footer > aside > P
 {
     line-height: 2.4em ;
 }
 
-footer > aside > P > a
-{
-    font-size: large;
-}
-
 @media screen and (min-width: 769px) and (max-width: 1071px)
 {
 
+    /*taille 1 - Titre*/
+    h1, h2
+    {
+        font-size: calc(6px + 2.2vw);
+    }
+
+    /*taille 2 - filtre éco marseil, recherche, Afficher plus...*/
+    .recherche > form > div, .recherche > form > input, .filtre, .afficher-plus
+    {
+        font-size: calc(5px + 1.7vw);
+    }
+
+    /*taille 3 - nav, i, com...*/
+    nav, .top > p, .info, h3, article > p, article > div > p, footer > aside > p > a
+    {
+        font-size: calc(4px + 1.2vw);
+    }
+
     header
     {
-        font-size:calc(5px + 2vw);
+        margin: 0px;
     }
 
     header > .menu
@@ -661,15 +655,21 @@ footer > aside > P > a
     {
         width: 100%;
         justify-content: space-around;
-        margin-top: 2vw;
+        margin: 2vw 0vw 0vw 0vw;
         order: 3;
+    }
+
+    header > .menu > .menu-duo > a
+    {
+        width: 50%;
     }
 
     header > .menu > .menu-duo > a > div
     {
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
+        margin: 0px;
     }
 
     header > .menu > .menu-duo > a > .selected
@@ -691,13 +691,7 @@ footer > aside > P > a
 
     .top > h1
     {
-        font-size:calc(6px + 2.2vw);
         margin-top: 1.5em;
-    }
-
-    button, input, .top > p, .info > p, .recherche > form > div, .filtres > p
-    {
-        font-size: calc(5px + 1.7vw);
     }
 
     .recherche
@@ -714,7 +708,6 @@ footer > aside > P > a
     {
         height: calc(8px + 4.5vw);
         width: calc(8px + 4.5vw);
-        font-size:calc(6px + 2vw);
         margin-left: -2px;
         display: flex;
         align-items: center;
@@ -727,20 +720,9 @@ footer > aside > P > a
         margin-bottom: 1em;
     }
 
-    .top > .info > div > .fa-info
-    {
-        font-size: 1.8vw;
-    }
-
     body > .center
     {
         flex-direction: column;
-    }
-
-    /* Aussi valable pour hebergement*/
-    .titre
-    {
-        font-size:calc(6px + 2vw);
     }
 
     /* Zone Populaire*/
@@ -760,11 +742,15 @@ footer > aside > P > a
     .popular > .popular2 > a
     {
         width: 90%;
+        height: 22vw;
+        margin-bottom: 3vw;
+        border-radius: 1.9vw;
     }
 
     .popular > .popular2 > a > article
     {
         grid-template-rows: auto auto;
+        border-radius: 1.9vw;
     }
 
     .popular > .popular2 > a > article > img
@@ -772,6 +758,7 @@ footer > aside > P > a
         border: 4px solid white;
         width: calc(100% - 8px);
         height: calc(100% - 8px);
+        border-radius: 1.9vw 0em 0em 1.9vw;
     }
 
     /*Mettre max-heigt pour titre*/
@@ -780,12 +767,6 @@ footer > aside > P > a
     .popular > .popular2 > a > article > .span-title
     {
         margin: 0.9em 5% 0em 10px;
-    }
-
-    /* Valable dans hebergement, et article*/
-    .hebergement2 > a > article > p, .paragaph-a, .paragaph-a2, .paragaph-a3, .paragaph-a6, .paragaph-p, .span-title
-    {
-        font-size:calc(4px + 1.2vw);
     }
 
     /*Zone juste hebergement*/
@@ -811,22 +792,22 @@ footer > aside > P > a
     {
         width: 38.5vw;
         margin: 0em 0vw 3vw 0vw;
-        border-radius: 1.9em;
+        border-radius: 1.9vw;
     }
 
     .hebergement2 > a > article
     {
-        border-radius: 1.9em;
+        border-radius: 1.9vw;
     }
 
     .hebergement2 > a > article > img
     {
         height: 18vw;
         border: 4px solid white;
-        border-radius: 1.9em 1.9em 0em 0em;
+        border-radius: 1.9vw 1.9vw 0em 0em;
     }
 
-    .hebergement2 > a > article > h2, .hebergement2 > a > article > p
+    .hebergement2 > a > article > h3, .hebergement2 > a > article > p
     {
         line-height: 2.2vw;
     }
@@ -836,23 +817,70 @@ footer > aside > P > a
         margin-top: 3em;
     }
 
-    .alligne-afficher
+    .activite > .activite2
     {
-        font-size:calc(7px + 1.2vw);
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15.5vw 18.5vw 15.5vw 15.5vw;
+        grid-template-areas: "a1 a2" "a1 a3" "a5 a4" "a6 a4";
     }
 
-    footer > aside > h2
+    .ia1, .ia3
     {
-        font-size: calc(6px + 2vw);
+        margin-bottom: 3vw;
+    }
+
+    .ia1, .ia2, .activite2 > div, .ia4, .ia5, .ia6
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-self: center;
+        width: 83.5%;
+        border-radius: 1.9vw;
+    }
+
+    .activite2 > div > .ia3
+    {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 67%;
+        border-radius: 1.9vw;
+    }
+
+    .ia5
+    {
+        height: 80%;
+    }
+
+    .paragaph-a
+    {
+        border-radius: 0vw 0vw 1.9vw 1.9vw;
     }
 }
 
 @media screen and (max-width: 768px)
 {
+    /*taille 1 - Titre*/
+    h1, h2
+    {
+        font-size: calc(7px + 2.2vw);
+    }
+
+    /*taille 2 - filtre éco marseil, recherche, Afficher plus...*/
+    .recherche > form > div, .recherche > form > input, .filtre, .afficher-plus
+    {
+        font-size: calc(6px + 2vw);
+    }
+
+    /*taille 3 - nav, i, com...*/
+    nav, .top > p, .info, h3, article > p, article > div > p, footer > aside > p > a
+    {
+        font-size: calc(6px + 1.6vw);
+    }
 
     header
     {
-        font-size:calc(5px + 3vw);
+        margin: 0px;
     }
 
     header > .menu
@@ -883,15 +911,21 @@ footer > aside > P > a
     {
         width: 100%;
         justify-content: space-around;
-        margin-top: 2vw;
+        margin: 2vw 0vw 0vw 0vw;
         order: 3;
+    }
+
+    header > .menu > .menu-duo > a
+    {
+        width: 50%;
     }
 
     header > .menu > .menu-duo > a > div
     {
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
+        margin: 0px;
     }
 
     header > .menu > .menu-duo > a > .selected
@@ -909,16 +943,6 @@ footer > aside > P > a
     .top
     {
         margin:0vw 6vw 0vw 5vw;
-    }
-
-    .top > h1
-    {
-        font-size:calc(4px + 5vw);
-    }
-
-    button, input, .top > p, .info > p, .recherche > form > div, .filtres > p
-    {
-        font-size: calc(5px + 2.2vw);
     }
 
     .recherche
@@ -956,6 +980,11 @@ footer > aside > P > a
         border: none;
     }
 
+    .recherche > form > .bouton-recherche-phone
+    {
+        display: contents;
+    }
+
     .recherche > form > .bouton-recherche
     {
         display: none;
@@ -981,7 +1010,6 @@ footer > aside > P > a
     {
         height: calc(8px + 6vw);
         width: calc(8px + 6vw);
-        font-size:calc(6px + 3vw);
         margin-left: -2px;
         display: flex;
         align-items: center;
@@ -1007,21 +1035,6 @@ footer > aside > P > a
         height: calc(5px + 2.2vw);
         margin-top: 1vw;
         margin-bottom: 3em;
-    }
-
-    .top > .info > div > .fa-info
-    {
-        font-size: calc(5px + 2.2vw);
-    }
-
-    .titre
-    {
-        font-size:calc(7px + 2.2vw);
-    }
-
-    .fa-chart-line
-    {
-        font-size:calc(7px + 2.2vw);
     }
 
     body > .center
@@ -1082,16 +1095,6 @@ footer > aside > P > a
         margin: 2vw 5% 5vw 5%;
     }
 
-    .hebergement2 > a > article > p, .paragaph-a, .paragaph-a2, .paragaph-a3, .paragaph-a6, .paragaph-p, .blue-star, .grey-star
-    {
-        font-size:calc(5px + 2vw);
-    }
-
-    .span-title
-    {
-        font-size:calc(6px + 2vw);
-    }
-
     .popular > .popular2 > a > article > div > .paragaph-star
     {
         margin: 10px 0px 5px 0px;
@@ -1140,7 +1143,7 @@ footer > aside > P > a
         border: 3px solid white;
     }
 
-    .hebergement2 > a > article > h2
+    .hebergement2 > a > article > h3
     {
         margin: 0.5em 1em 0em 1em;
         line-height: calc(5px + 2vw + 0.5em);
@@ -1157,7 +1160,6 @@ footer > aside > P > a
         margin-left: 5vw;
         display: flex;
         align-items: center;
-        font-size: calc(7px + 2vw);
     }
 
     /*A lire*/
@@ -1173,7 +1175,7 @@ footer > aside > P > a
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        margin-bottom: 1.5em;
+        margin-bottom: 1.5em;        
     }
 
     .ia1, .ia2, .ia3, .ia4, .ia5, .ia6
@@ -1186,7 +1188,7 @@ footer > aside > P > a
         display: inline-block;
     }
 
-    .activite > .activite2 > a > article > h2, .activite > .activite2 > div > a > article > h2
+    .activite > .activite2 > a > article > h3, .activite > .activite2 > div > a > article > h3
     {
         height: 20%;
         border-radius: 0vw 0vw 5vw 5vw;
@@ -1211,17 +1213,7 @@ footer > aside > P > a
         width: 100%;
     }
 
-    footer > aside > h2
-    {
-        font-size: calc(6px + 2.2vw);
-    }
-
-    footer > aside > P
-    {
-        font-size: calc(5px + 2vw);
-    }
-
-    footer > aside > P, footer > aside > h2
+    footer > aside > P, footer > aside > h3
     {
         line-height: 2em ;
     }   
