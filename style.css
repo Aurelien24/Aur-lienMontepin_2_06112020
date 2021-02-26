@@ -9,22 +9,24 @@
 
 /*  opti css, ajouté lien gitpage et repo en livrable, supprimer les fichier en trop repo git hub, et améliorer timing et contenu présentatation. Prendre un suppport de présentation ? Caier des charges + flex + grid +... - Un power point ET mieux connaitre git hub pas juste git*/  
 
+/* Espace footer mobile + loupe a mettre dans un button */
+
 /*Gestion taille police pc*/
 
 /*taille 1 - Titre*/
-h1, h2
+h1, h2, .popular-text > i
 {
-    font-size: calc(8px + 1.4vw);
+    font-size: calc(8px + 1.3vw);
 }
 
 /*taille 2 - filtre éco marseil, recherche, Afficher plus...*/
-.recherche > form > div, .recherche > form > input, .filtre, .afficher-plus
+.recherche > form > div, .recherche > form > input, .bouton-recherche > p, .bouton-recherche > i > .filtre, .afficher-plus
 {
     font-size: calc(7px + 1.2vw);
 }
 
 /*taille 3 - nav, i, com...*/
-nav, .top > p, .info, h3, article > p, article > div > p, footer > aside > p > a
+nav, .top > p, .filtres, .filtre-text, .filtre-icone, .info, h3, article > p, article > div > p, footer > aside > p > a
 {
     font-size: calc(6px + 1vw);
 }
@@ -162,9 +164,14 @@ header > .menu
     border-radius: 0px 20px 20px 0px;
 }
 
-.recherche > form > .bouton-recherche-phone
+.recherche > form > .bouton-recherche-phone > p
 {
-    display:none;
+    margin: 0px;
+}
+
+.recherche > form > .bouton-recherche-phone > i
+{
+    display: none;
 }
 
 .top > .filtres
@@ -245,8 +252,8 @@ header > .menu
 {
     border: 1px solid #E4E4E4;
     border-radius: 100%;
-    width: 1.9vw;
-    height: 1.9vw;
+    width: 1.4vw;
+    height: 1.4vw;
     padding: 0.5em;
     text-align: center;
     display: flex;
@@ -308,6 +315,7 @@ body > .center
     flex-direction: column;
     background-color: white;
     border-radius: 1vw;
+    height: 100%;
 }
 
 .hebergement2 > a > article > img
@@ -399,7 +407,7 @@ body > .center
     border-radius: 1vw;
     display: grid;
     grid-template-columns: 36.8% auto;
-    grid-template-rows: min-content auto;
+    grid-template-rows: 33% 67%;
 }
 
 .popular > .popular2 > a > article > img
@@ -605,13 +613,13 @@ footer > aside > P
 {
 
     /*taille 1 - Titre*/
-    h1, h2
+    h1, h2, .popular-text > i
     {
-        font-size: calc(6px + 2.2vw);
+        font-size: calc(6px + 2.1vw);
     }
 
     /*taille 2 - filtre éco marseil, recherche, Afficher plus...*/
-    .recherche > form > div, .recherche > form > input, .filtre, .afficher-plus
+    nav, .top > p, .filtres, .filtre-text, .filtre-icone, .info, h3, article > p, article > div > p, footer > aside > p > a
     {
         font-size: calc(5px + 1.7vw);
     }
@@ -619,7 +627,7 @@ footer > aside > P
     /*taille 3 - nav, i, com...*/
     nav, .top > p, .info, h3, article > p, article > div > p, footer > aside > p > a
     {
-        font-size: calc(4px + 1.2vw);
+        font-size: calc(4px + 1.6vw);
     }
 
     header
@@ -692,6 +700,12 @@ footer > aside > P
     .top > h1
     {
         margin-top: 1.5em;
+    }
+
+    .top > .info > div
+    {
+        height: 2vw;
+        width: 2vw;
     }
 
     .recherche
@@ -861,7 +875,7 @@ footer > aside > P
 @media screen and (max-width: 768px)
 {
     /*taille 1 - Titre*/
-    h1, h2
+    h1, h2, .popular-text > i
     {
         font-size: calc(7px + 2.2vw);
     }
@@ -873,7 +887,7 @@ footer > aside > P
     }
 
     /*taille 3 - nav, i, com...*/
-    nav, .top > p, .info, h3, article > p, article > div > p, footer > aside > p > a
+    nav, .top > p, .filtres, .filtre-text, .filtre-icone, .info, h3, article > p, article > div > p, footer > aside > p > a
     {
         font-size: calc(6px + 1.6vw);
     }
@@ -950,6 +964,11 @@ footer > aside > P
         display: flex;
     }
 
+    .recherche > form
+    {
+        width: 100%;
+    }
+
     .recherche > form > div
     {
         padding: 0.8em 1em;
@@ -965,29 +984,24 @@ footer > aside > P
 
     .recherche > form > #recherche
     {
-        width: calc(100% - 11vw - 5vw - 5em);
+        width: 100%;
     }
 
     .recherche > form > .bouton-recherche-phone
     {
-        background-color: #0065FC;
-        color : white;
-        border-left: 0px;
-        padding: 0.9em 1em;
-        border-radius: 33%;
-        margin-left: -16px;
-        font-family: 'FontAwesome';
-        border: none;
+        border-radius: 20px;
+        margin-left: -20px;
+        width: 9vw;        
     }
 
-    .recherche > form > .bouton-recherche-phone
-    {
-        display: contents;
-    }
-
-    .recherche > form > .bouton-recherche
+    .recherche > form > .bouton-recherche-phone > p
     {
         display: none;
+    }
+
+    .recherche > form > .bouton-recherche-phone > i
+    {
+        display: inline-block;
     }
 
     .button
@@ -1034,7 +1048,6 @@ footer > aside > P
         width: calc(5px + 2.2vw);
         height: calc(5px + 2.2vw);
         margin-top: 1vw;
-        margin-bottom: 3em;
     }
 
     body > .center
@@ -1075,6 +1088,7 @@ footer > aside > P
     .popular > .popular2 > a > article
     {
         border-radius: 5vw;
+        grid-template-rows: 20% 80%;
     }
 
     .popular > .popular2 > a > article > img
@@ -1216,5 +1230,5 @@ footer > aside > P
     footer > aside > P, footer > aside > h3
     {
         line-height: 2em ;
-    }   
+    }
 }
