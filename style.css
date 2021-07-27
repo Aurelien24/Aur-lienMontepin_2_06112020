@@ -20,7 +20,7 @@ h1, h2, .popular-text > i
 }
 
 /*taille 2 - filtre éco marseil, recherche, Afficher plus...*/
-.recherche > form > div, .recherche > form > input, .bouton-recherche > p, .bouton-recherche > i > .filtre, .afficher-plus
+.recherche > form > div, .recherche > form > input, .bouton-recherche, .bouton-recherche > i > .filtre, .afficher-plus
 {
     font-size: calc(7px + 1.2vw);
 }
@@ -28,7 +28,7 @@ h1, h2, .popular-text > i
 /*taille 3 - nav, i, com...*/
 nav, .top > p, .filtres, .filtre-text, .filtre-icone, .info, h3, article > p, article > div > p, footer > aside > p > a
 {
-    font-size: calc(6px + 1vw);
+    font-size: calc(5px + 1vw);
 }
 
 input, .top > .filtres > p, .span-title, .span-price, .afficher-plus
@@ -106,7 +106,7 @@ header > .menu
     padding-top: 2em;
 }
 
-.menu > .s-inscrire
+.menu > .s-inscrire > a
 {
     font-weight: bold;
     color: #0065FC;
