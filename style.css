@@ -164,14 +164,14 @@ header > .menu
     border-radius: 0px 20px 20px 0px;
 }
 
-.recherche > form > .bouton-recherche-phone > p
-{
-    margin: 0px;
-}
-
-.recherche > form > .bouton-recherche-phone > i
+.recherche > form > .bouton-recherche-phone
 {
     display: none;
+}
+
+.recherche > form > .bouton-recherche-pc
+{
+    margin: 0px;
 }
 
 .top > .filtres
@@ -992,16 +992,13 @@ footer > aside > P
         border-radius: 20px;
         margin-left: -20px;
         width: 9vw;        
+
+        display: inline-block;
     }
 
-    .recherche > form > .bouton-recherche-phone > p
+    .recherche > form > .bouton-recherche-pc
     {
         display: none;
-    }
-
-    .recherche > form > .bouton-recherche-phone > i
-    {
-        display: inline-block;
     }
 
     .button
