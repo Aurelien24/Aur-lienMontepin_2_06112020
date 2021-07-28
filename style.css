@@ -164,12 +164,12 @@ header > .menu
     border-radius: 0px 20px 20px 0px;
 }
 
-.recherche > form > .bouton-recherche-phone
+.recherche > form > .bouton-recherche-global > .fa-search
 {
     display: none;
 }
 
-.recherche > form > .bouton-recherche-pc
+.recherche > form > .bouton-recherche-global > .rechercherText
 {
     margin: 0px;
 }
@@ -987,7 +987,7 @@ footer > aside > P
         width: 100%;
     }
 
-    .recherche > form > .bouton-recherche-phone
+    .recherche > form > .bouton-recherche-global
     {
         border-radius: 20px;
         margin-left: -20px;
@@ -996,9 +996,14 @@ footer > aside > P
         display: inline-block;
     }
 
-    .recherche > form > .bouton-recherche-pc
+    .recherche > form > .bouton-recherche-global > .rechercherText
     {
         display: none;
+    }
+
+    .recherche > form > .bouton-recherche-global > .fa-search
+    {
+        display: inline;
     }
 
     .button
